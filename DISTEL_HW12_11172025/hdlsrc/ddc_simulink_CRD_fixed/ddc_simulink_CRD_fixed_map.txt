@@ -1,0 +1,16 @@
+ --> ddc_simulink_CRD_fixed_pkg
+ddc_simulink_CRD_fixed_tc --> ddc_simulink_CRD_fixed_tc
+ddc_simulink_CRD_fixed/Chirp/Counter Limited/Increment Real World --> Increment_Real_World
+ddc_simulink_CRD_fixed/Chirp/Counter Limited/Wrap To Zero --> Wrap_To_Zero
+ddc_simulink_CRD_fixed/Chirp/Counter Limited --> Counter_Limited
+ddc_simulink_CRD_fixed/Chirp/NCO1/DitherGen --> DitherGen
+ddc_simulink_CRD_fixed/Chirp/NCO1/WaveformGen/LookUpTableGen --> LookUpTableGen
+ddc_simulink_CRD_fixed/Chirp/NCO1/WaveformGen --> WaveformGen
+ddc_simulink_CRD_fixed/Chirp/NCO1 --> NCO1
+ddc_simulink_CRD_fixed/Chirp --> Chirp
+ddc_simulink_CRD_fixed/LPF --> LPF
+ddc_simulink_CRD_fixed/NCO/DitherGen --> DitherGen_block
+ddc_simulink_CRD_fixed/NCO/WaveformGen/LookUpTableGen --> LookUpTableGen_block
+ddc_simulink_CRD_fixed/NCO/WaveformGen --> WaveformGen_block
+ddc_simulink_CRD_fixed/NCO --> NCO
+ddc_simulink_CRD_fixed --> ddc_simulink_CRD_fixed

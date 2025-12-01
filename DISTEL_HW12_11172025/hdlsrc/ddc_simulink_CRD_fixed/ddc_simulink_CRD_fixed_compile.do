@@ -1,0 +1,17 @@
+vlib work
+vcom  ddc_simulink_CRD_fixed_pkg.vhd
+vcom  ddc_simulink_CRD_fixed_tc.vhd
+vcom  Increment_Real_World.vhd
+vcom  Wrap_To_Zero.vhd
+vcom  Counter_Limited.vhd
+vcom  DitherGen.vhd
+vcom  LookUpTableGen.vhd
+vcom  WaveformGen.vhd
+vcom  NCO1.vhd
+vcom  Chirp.vhd
+vcom  LPF.vhd
+vcom  DitherGen_block.vhd
+vcom  LookUpTableGen_block.vhd
+vcom  WaveformGen_block.vhd
+vcom  NCO.vhd
+vcom  ddc_simulink_CRD_fixed.vhd

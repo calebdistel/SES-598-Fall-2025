@@ -1,0 +1,1131 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+High-level Resource Utilization Report for lab2_spectrometer_simulink_CRD
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdBillOfMaterials'); else local_onload();}} catch(err) {};hdlTableShrink(this, 'Adder_1_8');hdlTableShrink(this, 'Adder_1_9');hdlTableShrink(this, 'Subtractor_1_8');hdlTableShrink(this, 'Subtractor_1_9');hdlTableShrink(this, 'Subtractor_1_10');hdlTableShrink(this, 'Register_1_2');hdlTableShrink(this, 'Register_1_12');hdlTableShrink(this, 'Multiplexer_1_36');hdlTableShrink(this, 'Multiplexer_1_40');hdlTableShrink(this, 'Multiplexer_1_41');hdlTableShrink(this, 'Dynamic Shift Right_1_1');hdlTableShrink(this, 'Input_Port');hdlTableShrink(this, 'Output_Port');hdlTableShrink(this, 'Multiplier_2_1');">
+<script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<font SIZE="+2" COLOR="#000066">
+Generic Resource Report for lab2_spectrometer_simulink_CRD
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Multipliers
+</td>
+<td align="center" valign="top" style="border-style: none">
+5
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Adders/Subtractors
+</td>
+<td align="center" valign="top" style="border-style: none">
+148
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+348
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Total 1-Bit Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+4159
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+RAMs
+</td>
+<td align="center" valign="top" style="border-style: none">
+11
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Multiplexers
+</td>
+<td align="center" valign="top" style="border-style: none">
+250
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+I/O Bits
+</td>
+<td align="center" valign="top" style="border-style: none">
+59
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Static Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Dynamic Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+38
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:37\')'})"  name="code2model" class="code2model">
+Subsystem
+</a>
+
+</h5>
+<h5>
+Multipliers (4)
+</h5>
+<span style="font-family:monospace">
+19x16-bit Multiplier 							: 4
+</span>
+<br /><h5>
+Adders/Subtractors (143)
+</h5>
+<span style="font-family:monospace">
+3x3-bit Adder 							: 12
+</span>
+<br /><span style="font-family:monospace">
+18x18-bit Adder 							: 2
+</span>
+<br /><span style="font-family:monospace">
+2x2-bit Adder 							: 10
+</span>
+<br /><span style="font-family:monospace">
+19x19-bit Adder 							: 4
+</span>
+<br /><span style="font-family:monospace">
+4x4-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+36x36-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+20x20-bit Adder 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_1_8')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+21x21-bit Adder 							: 42
+</span>
+<span name="Adder_1_8" id="Adder_1_8">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_1_9')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+37x37-bit Adder 							: 1
+</span>
+<span name="Adder_1_9" id="Adder_1_9">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+CSD_Gain_Factor
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+18x18-bit Subtractor 							: 2
+</span>
+<br /><span style="font-family:monospace">
+19x19-bit Subtractor 							: 4
+</span>
+<br /><span style="font-family:monospace">
+10x10-bit Subtractor 							: 3
+</span>
+<br /><span style="font-family:monospace">
+6x6-bit Subtractor 							: 2
+</span>
+<br /><span style="font-family:monospace">
+17-bit Subtractor 							: 6
+</span>
+<br /><span style="font-family:monospace">
+36x36-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+20x20-bit Subtractor 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_1_8')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+21x21-bit Subtractor 							: 42
+</span>
+<span name="Subtractor_1_8" id="Subtractor_1_8">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_1_9')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+22-bit Subtractor 							: 2
+</span>
+<span name="Subtractor_1_9" id="Subtractor_1_9">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+abs_rsvd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+abs_rsvd_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_1_10')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+37x37-bit Subtractor 							: 4
+</span>
+<span name="Subtractor_1_10" id="Subtractor_1_10">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+CSD_Gain_Factor
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (326)
+</h5>
+<span style="font-family:monospace">
+16-bit Register 							: 12
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 103
+</span>
+<span name="Register_1_2" id="Register_1_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Delay_ValidIn
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+DelayValidOut
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+3-bit Register 							: 21
+</span>
+<br /><span style="font-family:monospace">
+2-bit Register 							: 17
+</span>
+<br /><span style="font-family:monospace">
+17-bit Register 							: 18
+</span>
+<br /><span style="font-family:monospace">
+18-bit Register 							: 28
+</span>
+<br /><span style="font-family:monospace">
+19-bit Register 							: 30
+</span>
+<br /><span style="font-family:monospace">
+4-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+35-bit Register 							: 12
+</span>
+<br /><span style="font-family:monospace">
+36-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+20-bit Register 							: 34
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_12')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+21-bit Register 							: 48
+</span>
+<span name="Register_1_12" id="Register_1_12">
+<ul class="SystemdefinedCollapse" id="ed720e5c-1dc1-4fbe-b283-bcc4dccc4f57" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+DelayRealInput
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+DelayImagInput
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+DelayQuadMapper1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+DelayQuadMapper2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline1_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline2_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline3_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline4_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline5_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline6_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline7_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline8_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline9
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline9_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline10
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline10_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline11
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline11_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline12
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline12_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline13
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline13_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline14
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline14_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline15
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline15_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline16
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline16_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline17
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline17_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline18
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline18_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Pipeline19
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+Output_Register
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'ed720e5c-1dc1-4fbe-b283-bcc4dccc4f57')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><h5>
+RAMs (11)
+</h5>
+<span style="font-family:monospace">
+8x17-bit RAM 							: 3
+</span>
+<br /><span style="font-family:monospace">
+4x18-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x18-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x19-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x20-bit RAM 							: 2
+</span>
+<br /><h5>
+Multiplexers (241)
+</h5>
+<span style="font-family:monospace">
+2-bit 8-to-1 Multiplexer 							: 7
+</span>
+<br /><span style="font-family:monospace">
+1-bit 7-to-1 Multiplexer 							: 6
+</span>
+<br /><span style="font-family:monospace">
+3-bit 5-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+1-bit 4-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+3-bit 6-to-1 Multiplexer 							: 7
+</span>
+<br /><span style="font-family:monospace">
+2-bit 9-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+17-bit 6-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+3-bit 7-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+1-bit 9-to-1 Multiplexer 							: 6
+</span>
+<br /><span style="font-family:monospace">
+3-bit 8-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+1-bit 5-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+3-bit 9-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+17-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+17-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+1-bit 3-to-1 Multiplexer 							: 5
+</span>
+<br /><span style="font-family:monospace">
+2-bit 5-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+2-bit 6-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+19-bit 2-to-1 Multiplexer 							: 26
+</span>
+<br /><span style="font-family:monospace">
+18-bit 6-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+18-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+18-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+1-bit 6-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+10-bit 2-to-1 Multiplexer 							: 6
+</span>
+<br /><span style="font-family:monospace">
+6-bit 2-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+4-bit 4-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+4-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+2-bit 2-to-1 Multiplexer 							: 6
+</span>
+<br /><span style="font-family:monospace">
+16-bit 10-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+17-bit 2-to-1 Multiplexer 							: 12
+</span>
+<br /><span style="font-family:monospace">
+1-bit 8-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+2-bit 7-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+19-bit 6-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+19-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+19-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+20-bit 2-to-1 Multiplexer 							: 6
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_1_36')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+21-bit 2-to-1 Multiplexer 							: 61
+</span>
+<span name="Multiplexer_1_36" id="Multiplexer_1_36">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+mux
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+mux_1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+muxMag
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+20-bit 4-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+3-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+20-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_1_40')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+22-bit 2-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_1_40" id="Multiplexer_1_40">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+abs_rsvd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+abs_rsvd_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_1_41')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 20
+</span>
+<span name="Multiplexer_1_41" id="Multiplexer_1_41">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+relop
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Number of Shift operators (40)
+</h5>
+<span style="font-family:monospace">
+Static Shift Left 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Dynamic Shift Right_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+21-bit Dynamic Shift Right 							: 38
+</span>
+<span name="Dynamic Shift Right_1_1" id="Dynamic Shift Right_1_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:15\')'})"  name="code2model" class="code2model">
+dynamic_shift_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Number of I/O Bits (59)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Input_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Input Bits: 36
+</span>
+<span name="Input_Port" id="Input_Port">
+<ul>
+<li>
+clk: 1 bit
+</li>
+<li>
+reset: 1 bit
+</li>
+<li>
+clk_enable: 1 bit
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:38\')'})"  name="code2model" class="code2model">
+valid
+</a>
+: 1 bit
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:39\')'})"  name="code2model" class="code2model">
+freq_in
+</a>
+: 32 bits
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Output_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Output Bits: 23
+</span>
+<span name="Output_Port" id="Output_Port">
+<ul>
+<li>
+ce_out: 1 bit
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:40\')'})"  name="code2model" class="code2model">
+mag_out
+</a>
+: 21 bits
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:41\')'})"  name="code2model" class="code2model">
+valid_out
+</a>
+: 1 bit
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:26\')'})"  name="code2model" class="code2model">
+Chirp
+</a>
+
+</h5>
+<h5>
+Multipliers (1)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplier_2_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x32-bit Multiplier 							: 1
+</span>
+<span name="Multiplier_2_1" id="Multiplier_2_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'lab2_spectrometer_simulink_CRD:33\')'})"  name="code2model" class="code2model">
+Product
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Adders/Subtractors (5)
+</h5>
+<span style="font-family:monospace">
+33x33-bit Adder 							: 3
+</span>
+<br /><span style="font-family:monospace">
+13x13-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+17-bit Subtractor 							: 1
+</span>
+<br /><h5>
+Registers (22)
+</h5>
+<span style="font-family:monospace">
+1-bit Register 							: 13
+</span>
+<br /><span style="font-family:monospace">
+33-bit Register 							: 3
+</span>
+<br /><span style="font-family:monospace">
+19-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+13-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+11-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+16-bit Register 							: 3
+</span>
+<br /><h5>
+Multiplexers (9)
+</h5>
+<span style="font-family:monospace">
+33-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+11-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+11-bit 3-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+16-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><p><hr /></p>
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script>
+</body>
+
+</html>

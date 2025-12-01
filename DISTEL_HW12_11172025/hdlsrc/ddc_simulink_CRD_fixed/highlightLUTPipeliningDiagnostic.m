@@ -1,0 +1,10 @@
+open_system('ddc_simulink_CRD_fixed');
+open_system('gm_ddc_simulink_CRD_fixed');
+cs.HiliteType = 'user1';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'cyan';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_ddc_simulink_CRD_fixed/Chirp/1-D Lookup Table1', 'user1');
+annotate_port('gm_ddc_simulink_CRD_fixed/Chirp/1-D Lookup Table1', 0, 1, 'Lookup Table mapped to RAM');
+hilite_system('ddc_simulink_CRD_fixed/Chirp/1-D Lookup Table1', 'user1');
+annotate_port('ddc_simulink_CRD_fixed/Chirp/1-D Lookup Table1', 0, 1, 'Lookup Table mapped to RAM');

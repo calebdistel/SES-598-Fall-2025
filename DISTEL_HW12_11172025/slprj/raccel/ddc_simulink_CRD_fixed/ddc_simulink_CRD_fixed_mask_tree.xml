@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlsaMaskTree/R2020a">
+  <slsa.mm.maskTree.MaskTree type="slsa.mm.maskTree.MaskTree" uuid="5e1f6417-0232-438d-9d85-a95c4104e916">
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="cd1b6552-f546-4c75-929b-411f96889165">
+      <blockPath>ddc_simulink_CRD_fixed/Chirp/ReplicaOfSource</blockPath>
+      <id>ddc_simulink_CRD_fixed:103</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="612a1aeb-f97b-4ce6-829e-aa91c960594b">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5efef3b9-0de1-4ccc-baad-7be7a432074f">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <name>sweep</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="edca8e77-b179-4878-894c-c9b816e7fd69">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>mode</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="da0b1dc6-e1ee-4f71-94a6-7c5055534624">
+          <evaluate>true</evaluate>
+          <expression>10e6</expression>
+          <isTunable>true</isTunable>
+          <name>f0</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4cd25387-91ed-4860-a0f7-2562a4d4fc2e">
+          <evaluate>true</evaluate>
+          <expression>20e6</expression>
+          <isTunable>true</isTunable>
+          <name>f1</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="62374050-3fc2-4bc2-ba19-5828a9b4cfdd">
+          <evaluate>true</evaluate>
+          <expression>0.00001998</expression>
+          <isTunable>true</isTunable>
+          <name>t1</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="501236f4-375e-4a08-a927-7bc50632c2cc">
+          <evaluate>true</evaluate>
+          <expression>0.00001998</expression>
+          <isTunable>true</isTunable>
+          <name>Tsweep</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="839d3413-cc48-442e-9840-28e0449b1956">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>phase</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="651ef5f9-353c-4738-a9b7-9f7bb0764a41">
+          <evaluate>true</evaluate>
+          <expression>1/Fs</expression>
+          <name>Ts</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="02df531d-7f51-4883-981b-d341f606ba91">
+            <name>Fs</name>
+            <value></value>
+            <workspace>global-workspace</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0131f5a5-2e31-485a-9e02-b15cd0b6d2bc">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>spf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9adc5dad-347d-43f0-9fb3-2e98cbd83e32">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>datatype</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="cedde795-1405-434c-bf3c-049cce564d21">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>OutputFrames</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="24811163-0408-4db9-bf0f-2db14d571480">
+      <blockPath>ddc_simulink_CRD_fixed/NCO</blockPath>
+      <id>ddc_simulink_CRD_fixed:2</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="0b0b61f1-a7a1-48a7-bfae-72f8e4552b1a">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="be654c6a-b0a8-4312-aad7-011a3bddec77">
+          <expression>Property</expression>
+          <name>PhaseIncrementSource</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d6bc0cd2-c841-4d9a-8e8c-771a31e7d0c2">
+          <evaluate>true</evaluate>
+          <expression>phIncr</expression>
+          <name>PhaseIncrement</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="ae5392c7-5813-40cf-81b2-5a6e0ea16e7d">
+            <name>phIncr</name>
+            <value></value>
+            <workspace>global-workspace</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="53acab5c-3f8d-4150-9932-3cedfb530170">
+          <expression>Property</expression>
+          <name>PhaseOffsetSource</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="72949a5f-196f-4ad4-a9e9-e55d758f5956">
+          <evaluate>true</evaluate>
+          <expression>phOff</expression>
+          <name>PhaseOffset</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="e4afc10b-833a-4c91-8de5-65bc4335acc2">
+            <name>phOff</name>
+            <value></value>
+            <workspace>global-workspace</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0f27a3b8-6256-4576-bdc9-63c872ba0a11">
+          <expression>Property</expression>
+          <name>DitherSource</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3b92e46b-2ff2-4475-8c01-1b08c62d6ae3">
+          <evaluate>true</evaluate>
+          <expression>ditherBits</expression>
+          <name>NumDitherBits</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="64b81863-9857-4a1a-ad75-e15ecc998f75">
+            <name>ditherBits</name>
+            <value></value>
+            <workspace>global-workspace</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="983bc062-4c97-433f-a152-1b1a4ee5d1e9">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>SamplesPerFrame</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5e96d5ce-8250-4ad5-8f1a-7807e53fc602">
+          <expression>off</expression>
+          <name>LUTCompress</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0cde438d-37eb-4ee3-9f51-f3930ee419e5">
+          <expression>off</expression>
+          <name>ResetAction</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bcd50e6a-fe4f-49c5-b402-3813b313032a">
+          <expression>Cosine</expression>
+          <name>Waveform</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4b515e2a-6260-402b-9390-3494863f470f">
+          <expression>off</expression>
+          <name>PhasePort</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="020ba6a4-93ef-491d-8d20-046e296a41de">
+          <expression>Code generation</expression>
+          <name>SimulateUsing</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9c4cc5ff-848e-4993-9775-fa5653840ea9">
+          <expression>Floor</expression>
+          <name>RoundingMethod</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="95bb7cf0-aec9-409c-8260-f198ca3e5b7d">
+          <expression>Wrap</expression>
+          <name>OverflowAction</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="91a8eaac-26dc-46c3-aca4-d3a1fec8b50c">
+          <expression>Binary point scaling</expression>
+          <name>AccumulatorDataType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="109a409f-dab5-4f8d-a98d-db06f11a1e7c">
+          <expression>yes</expression>
+          <name>AccumulatorSigned</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0dbe6018-3b32-47e8-a0a4-ce65826caddf">
+          <evaluate>true</evaluate>
+          <expression>N</expression>
+          <name>AccumulatorWL</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="0f85167f-031d-4dd7-b7d9-a252ac510837">
+            <name>N</name>
+            <value></value>
+            <workspace>global-workspace</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="827fac12-bb52-4711-9fef-c697142783ab">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>AccumulatorFL</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6a86b57b-628a-47e6-8a7b-1a1fbbbfd39b">
+          <expression>on</expression>
+          <name>PhaseQuantization</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d1a1b45b-5954-438d-a0b2-fc7eb8d2d8f1">
+          <evaluate>true</evaluate>
+          <expression>Q</expression>
+          <name>NumQuantizerAccumulatorBits</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="3814c854-98f0-4459-8357-610d1b5fd071">
+            <name>Q</name>
+            <value></value>
+            <workspace>global-workspace</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1d3ed7f3-149c-48d3-8b92-9c1d18b333cb">
+          <expression>Binary point scaling</expression>
+          <name>OutputDataType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3c0cda3d-d7ea-4252-9019-4891d1e5a861">
+          <expression>yes</expression>
+          <name>OutputSigned</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ab4a79ef-efa8-4181-a2b6-7fbf494f3759">
+          <evaluate>true</evaluate>
+          <expression>16</expression>
+          <name>OutputWL</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c39ec25d-0498-43d0-a264-e1597b879dc2">
+          <evaluate>true</evaluate>
+          <expression>14</expression>
+          <name>OutputFL</name>
+        </dialogParameters>
+        <initializationCode>matlab.system.MLSysBlockIconAndPortLabelsInfo.updateMLSysBlockIconAndPortLabels(gcbh)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="57089994-7013-4752-bbd3-5721524e1966">
+      <childrenIds>ddc_simulink_CRD_fixed:103</childrenIds>
+      <childrenIds>ddc_simulink_CRD_fixed:2</childrenIds>
+      <id>root</id>
+    </maskedBlocks>
+    <referencedGlobalWorkspaceVariables type="slsa.mm.maskTree.Variable" uuid="35ec5542-7130-4f43-b597-958bf872d39f">
+      <name>Fs</name>
+      <value>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAJAAAACAAAAAAAAAA4nIxB</value>
+      <workspace>global-workspace</workspace>
+    </referencedGlobalWorkspaceVariables>
+    <referencedGlobalWorkspaceVariables type="slsa.mm.maskTree.Variable" uuid="b3705154-6437-4746-beb8-cab3aac21fcf">
+      <name>N</name>
+      <value>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAJAAAACAAAAAAAAAAAAD9A</value>
+      <workspace>global-workspace</workspace>
+    </referencedGlobalWorkspaceVariables>
+    <referencedGlobalWorkspaceVariables type="slsa.mm.maskTree.Variable" uuid="ebed8da4-b1e8-4391-9d86-2c8c6a413525">
+      <name>Q</name>
+      <value>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAJAAAACAAAAAAAAAAAACpA</value>
+      <workspace>global-workspace</workspace>
+    </referencedGlobalWorkspaceVariables>
+    <referencedGlobalWorkspaceVariables type="slsa.mm.maskTree.Variable" uuid="66407f88-0f7d-4787-bc14-9c156af80512">
+      <name>ditherBits</name>
+      <value>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAJAAAACAAAAAAAAAAAADJA</value>
+      <workspace>global-workspace</workspace>
+    </referencedGlobalWorkspaceVariables>
+    <referencedGlobalWorkspaceVariables type="slsa.mm.maskTree.Variable" uuid="e60660d1-f82b-426f-ab8e-3ff99e41d99d">
+      <name>phIncr</name>
+      <value>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAJAAAACAAAAAAAAAAAAMBB</value>
+      <workspace>global-workspace</workspace>
+    </referencedGlobalWorkspaceVariables>
+    <referencedGlobalWorkspaceVariables type="slsa.mm.maskTree.Variable" uuid="73070aea-4279-4036-9147-b20838a75dfc">
+      <name>phOff</name>
+      <value>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAJAAAACAAAAAAAAAAAAMBB</value>
+      <workspace>global-workspace</workspace>
+    </referencedGlobalWorkspaceVariables>
+    <flags type="slsa.mm.maskTree.MaskTreeFlags" uuid="4dc1eeb3-22e6-4a44-b5a0-02ec6b4c7a89"/>
+  </slsa.mm.maskTree.MaskTree>
+</MF0>
