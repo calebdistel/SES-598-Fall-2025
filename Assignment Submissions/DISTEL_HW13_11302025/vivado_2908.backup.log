@@ -1,0 +1,478 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec  1 10:48:31 2025
+# Process ID: 2908
+# Current directory: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025
+# Command line: vivado.exe -mode tcl
+# Log file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/vivado.log
+# Journal file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025\vivado.jou
+# Running On        :LAPTOP-CEB4FDNH
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Xeon(R) W-10855M CPU @ 2.80GHz
+# CPU Frequency     :2808 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :34065 MB
+# Swap memory       :12348 MB
+# Total Virtual     :46413 MB
+# Available Virtual :4765 MB
+#-----------------------------------------------------------
+# catch errors using try/on error
+try {
+
+# ======== Create Project ======== 
+create_project -force wizprj hdlverifier_wizard_project
+
+
+# ======== Add source files to project ========
+set SRC1 {C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD}
+add_file "$SRC1/Chirp.vhd"
+add_file "$SRC1/Complex4Multiply.vhd"
+add_file "$SRC1/Complex4Multiply_block.vhd"
+add_file "$SRC1/Complex4Multiply_block1.vhd"
+add_file "$SRC1/Complex4Multiply_block2.vhd"
+add_file "$SRC1/CordicKernelMag.vhd"
+add_file "$SRC1/CordicKernelMag_block.vhd"
+add_file "$SRC1/CordicKernelMag_block1.vhd"
+add_file "$SRC1/CordicKernelMag_block2.vhd"
+add_file "$SRC1/CordicKernelMag_block3.vhd"
+add_file "$SRC1/CordicKernelMag_block4.vhd"
+add_file "$SRC1/CordicKernelMag_block5.vhd"
+add_file "$SRC1/CordicKernelMag_block6.vhd"
+add_file "$SRC1/CordicKernelMag_block7.vhd"
+add_file "$SRC1/CordicKernelMag_block8.vhd"
+add_file "$SRC1/CordicKernelMag_block9.vhd"
+add_file "$SRC1/CordicKernelMag_block10.vhd"
+add_file "$SRC1/CordicKernelMag_block11.vhd"
+add_file "$SRC1/CordicKernelMag_block12.vhd"
+add_file "$SRC1/CordicKernelMag_block13.vhd"
+add_file "$SRC1/CordicKernelMag_block14.vhd"
+add_file "$SRC1/CordicKernelMag_block15.vhd"
+add_file "$SRC1/CordicKernelMag_block16.vhd"
+add_file "$SRC1/CordicKernelMag_block17.vhd"
+add_file "$SRC1/CordicKernelMag_block18.vhd"
+add_file "$SRC1/CordicKernelMag_block19.vhd"
+add_file "$SRC1/CordicKernelMag_block20.vhd"
+add_file "$SRC1/CordicKernelMag_block21.vhd"
+add_file "$SRC1/CordicKernelMag_block22.vhd"
+add_file "$SRC1/Counter_Limited.vhd"
+add_file "$SRC1/DDC.vhd"
+add_file "$SRC1/DitherGen.vhd"
+add_file "$SRC1/DitherGen_block.vhd"
+add_file "$SRC1/FFT.vhd"
+add_file "$SRC1/Increment_Real_World.vhd"
+add_file "$SRC1/LookUpTableGen.vhd"
+add_file "$SRC1/LookUpTableGen_block.vhd"
+add_file "$SRC1/LPF.vhd"
+add_file "$SRC1/NCO.vhd"
+add_file "$SRC1/NCO1.vhd"
+add_file "$SRC1/Quadrant_Mapper.vhd"
+add_file "$SRC1/RADIX2FFT_bitNatural.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_1.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_1_block.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_2.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_3.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_4.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_5.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_6.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_7.vhd"
+add_file "$SRC1/RADIX22FFT_CTRL1_8.vhd"
+add_file "$SRC1/RADIX22FFT_SDF1_1.vhd"
+add_file "$SRC1/RADIX22FFT_SDF1_3.vhd"
+add_file "$SRC1/RADIX22FFT_SDF1_5.vhd"
+add_file "$SRC1/RADIX22FFT_SDF1_7.vhd"
+add_file "$SRC1/RADIX22FFT_SDF1_9.vhd"
+add_file "$SRC1/RADIX22FFT_SDF2_2.vhd"
+add_file "$SRC1/RADIX22FFT_SDF2_4.vhd"
+add_file "$SRC1/RADIX22FFT_SDF2_6.vhd"
+add_file "$SRC1/RADIX22FFT_SDF2_8.vhd"
+add_file "$SRC1/SDFCommutator1.vhd"
+add_file "$SRC1/SDFCommutator2.vhd"
+add_file "$SRC1/SDFCommutator3.vhd"
+add_file "$SRC1/SDFCommutator4.vhd"
+add_file "$SRC1/SDFCommutator5.vhd"
+add_file "$SRC1/SDFCommutator6.vhd"
+add_file "$SRC1/SDFCommutator7.vhd"
+add_file "$SRC1/SDFCommutator8.vhd"
+add_file "$SRC1/SDFCommutator9.vhd"
+add_file "$SRC1/SimpleDualPortRAM_generic.vhd"
+add_file "$SRC1/Spec_Avg.vhd"
+add_file "$SRC1/spec_avg_CRD.vhd"
+add_file "$SRC1/spec_avg_CRD_pkg.vhd"
+add_file "$SRC1/spec_avg_CRD_tc.vhd"
+add_file "$SRC1/Subsystem.vhd"
+add_file "$SRC1/Subsystem_pkg.vhd"
+add_file "$SRC1/Subsystem_tc.vhd"
+add_file "$SRC1/TWDLROM_3_1.vhd"
+add_file "$SRC1/TWDLROM_5_1.vhd"
+add_file "$SRC1/TWDLROM_7_1.vhd"
+add_file "$SRC1/TWDLROM_9_1.vhd"
+add_file "$SRC1/WaveformGen.vhd"
+add_file "$SRC1/WaveformGen_block.vhd"
+add_file "$SRC1/Wrap_To_Zero.vhd"
+
+
+# ======== Elaboration options ========
+set_property -name {xelab.snapshot} -value {mwcosim_query} -objects [get_filesets sim_1]
+
+# ======== Compile and Elaborate ========
+# Compile, elaborate, and start a sim image in order to auto determine
+# the top module and its interface information.
+set_property source_mgmt_mode All [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+
+# ======== Gather Design Info ========
+# DO NOT EDIT.  Needed for gathering top-level design information.
+set TOP_MODULE [get_property top [get_fileset sim_1]]
+set INPORT_NAMES [get_objects -filter { type == in_port }]
+set OUTPORT_NAMES [get_objects -filter { type == out_port }]
+report_scope [current_scope] > hdlverifier_tcl_query_info.txt
+foreach {port} [concat $INPORT_NAMES $OUTPORT_NAMES] { report_object $port >> hdlverifier_tcl_query_info.txt}
+
+} on error { errMsg errDetails } {
+    puts "CAUGHT ERROR: $errMsg, $errDetails"
+    exit 11
+}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlverifier_wizard_project'
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 498.234 ; gain = 201.469
+CRITICAL WARNING: [Vivado 12-3645] Please note that adding or importing multiple files, one at a time, can be performance intensive.  Both add_files and import_files commands accept multiple files as input, and passing a collection of multiple files to a single add_files or import_files commands can offer significant performance improvement.
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Subsystem'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlverifier_wizard_project/wizprj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Subsystem' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlverifier_wizard_project/wizprj.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Subsystem_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Subsystem_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Increment_Real_World.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Increment_Real_World'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Wrap_To_Zero.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Wrap_To_Zero'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Counter_Limited.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Counter_Limited'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/DitherGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DitherGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/LookUpTableGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LookUpTableGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/WaveformGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'WaveformGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/NCO1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NCO1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Chirp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Chirp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Complex4Multiply.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Complex4Multiply_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Complex4Multiply_block1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply_block1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Complex4Multiply_block2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply_block2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block10'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block11'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block12.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block12'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block13.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block13'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block14.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block14'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block15.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block15'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block16'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block17.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block17'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block18.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block18'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block19.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block19'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block20'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block21.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block21'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block22.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block22'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/CordicKernelMag_block9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/DitherGen_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DitherGen_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/LookUpTableGen_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LookUpTableGen_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/WaveformGen_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'WaveformGen_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/NCO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NCO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/LPF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LPF'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/DDC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SimpleDualPortRAM_generic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SimpleDualPortRAM_generic'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/TWDLROM_3_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_3_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/TWDLROM_5_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_5_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/TWDLROM_7_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_7_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/TWDLROM_9_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_9_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_1_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_1_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/SDFCommutator9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/RADIX2FFT_bitNatural.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RADIX2FFT_bitNatural'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/FFT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FFT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Quadrant_Mapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Quadrant_Mapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Spec_Avg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Spec_Avg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Subsystem_tc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Subsystem_tc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlsrc/spec_avg_CRD/Subsystem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Subsystem'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlverifier_wizard_project/wizprj.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot mwcosim_query xil_defaultlib.Subsystem -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot mwcosim_query xil_defaultlib.Subsystem -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.subsystem_pkg
+Compiling architecture rtl of entity xil_defaultlib.Subsystem_tc [subsystem_tc_default]
+Compiling architecture rtl of entity xil_defaultlib.Increment_Real_World [increment_real_world_default]
+Compiling architecture rtl of entity xil_defaultlib.Wrap_To_Zero [wrap_to_zero_default]
+Compiling architecture rtl of entity xil_defaultlib.Counter_Limited [counter_limited_default]
+Compiling architecture rtl of entity xil_defaultlib.DitherGen [dithergen_default]
+Compiling architecture rtl of entity xil_defaultlib.LookUpTableGen [lookuptablegen_default]
+Compiling architecture rtl of entity xil_defaultlib.WaveformGen [waveformgen_default]
+Compiling architecture rtl of entity xil_defaultlib.NCO1 [nco1_default]
+Compiling architecture rtl of entity xil_defaultlib.Chirp [chirp_default]
+Compiling architecture rtl of entity xil_defaultlib.DitherGen_block [dithergen_block_default]
+Compiling architecture rtl of entity xil_defaultlib.LookUpTableGen_block [lookuptablegen_block_default]
+Compiling architecture rtl of entity xil_defaultlib.WaveformGen_block [waveformgen_block_default]
+Compiling architecture rtl of entity xil_defaultlib.NCO [nco_default]
+Compiling architecture rtl of entity xil_defaultlib.LPF [lpf_default]
+Compiling architecture rtl of entity xil_defaultlib.DDC [ddc_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_1 [radix22fft_ctrl1_1_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator1 [sdfcommutator1_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF1_1 [radix22fft_sdf1_1_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_2 [radix22fft_ctrl1_2_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator2 [sdfcommutator2_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF2_2 [radix22fft_sdf2_2_default]
+Compiling architecture rtl of entity xil_defaultlib.TWDLROM_3_1 [twdlrom_3_1_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_3 [radix22fft_ctrl1_3_default]
+Compiling architecture rtl of entity xil_defaultlib.Complex4Multiply [complex4multiply_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator3 [sdfcommutator3_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF1_3 [radix22fft_sdf1_3_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_4 [radix22fft_ctrl1_4_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator4 [sdfcommutator4_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF2_4 [radix22fft_sdf2_4_default]
+Compiling architecture rtl of entity xil_defaultlib.TWDLROM_5_1 [twdlrom_5_1_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_5 [radix22fft_ctrl1_5_default]
+Compiling architecture rtl of entity xil_defaultlib.Complex4Multiply_block [complex4multiply_block_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator5 [sdfcommutator5_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF1_5 [radix22fft_sdf1_5_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_6 [radix22fft_ctrl1_6_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator6 [sdfcommutator6_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF2_6 [radix22fft_sdf2_6_default]
+Compiling architecture rtl of entity xil_defaultlib.TWDLROM_7_1 [twdlrom_7_1_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_7 [radix22fft_ctrl1_7_default]
+Compiling architecture rtl of entity xil_defaultlib.Complex4Multiply_block1 [complex4multiply_block1_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator7 [sdfcommutator7_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF1_7 [radix22fft_sdf1_7_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_8 [radix22fft_ctrl1_8_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator8 [sdfcommutator8_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF2_8 [radix22fft_sdf2_8_default]
+Compiling architecture rtl of entity xil_defaultlib.TWDLROM_9_1 [twdlrom_9_1_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_CTRL1_1_block [radix22fft_ctrl1_1_block_default]
+Compiling architecture rtl of entity xil_defaultlib.Complex4Multiply_block2 [complex4multiply_block2_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.SDFCommutator9 [sdfcommutator9_default]
+Compiling architecture rtl of entity xil_defaultlib.RADIX22FFT_SDF1_9 [radix22fft_sdf1_9_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.RADIX2FFT_bitNatural [radix2fft_bitnatural_default]
+Compiling architecture rtl of entity xil_defaultlib.FFT [fft_default]
+Compiling architecture rtl of entity xil_defaultlib.Quadrant_Mapper [quadrant_mapper_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag [cordickernelmag_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block [cordickernelmag_block_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block1 [cordickernelmag_block1_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block2 [cordickernelmag_block2_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block3 [cordickernelmag_block3_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block4 [cordickernelmag_block4_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block5 [cordickernelmag_block5_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block6 [cordickernelmag_block6_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block7 [cordickernelmag_block7_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block8 [cordickernelmag_block8_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block9 [cordickernelmag_block9_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block10 [cordickernelmag_block10_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block11 [cordickernelmag_block11_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block12 [cordickernelmag_block12_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block13 [cordickernelmag_block13_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block14 [cordickernelmag_block14_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block15 [cordickernelmag_block15_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block16 [cordickernelmag_block16_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block17 [cordickernelmag_block17_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block18 [cordickernelmag_block18_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block19 [cordickernelmag_block19_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block20 [cordickernelmag_block20_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block21 [cordickernelmag_block21_default]
+Compiling architecture rtl of entity xil_defaultlib.CordicKernelMag_block22 [cordickernelmag_block22_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.Spec_Avg [spec_avg_default]
+Compiling architecture rtl of entity xil_defaultlib.subsystem
+Built simulation snapshot mwcosim_query
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 503.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdlverifier_wizard_project/wizprj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mwcosim_query -key {Behavioral:sim_1:Functional:Subsystem} -tclbatch {Subsystem.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Subsystem.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mwcosim_query' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 517.551 ; gain = 14.547
+         VHDL Instance: {/Subsystem}
+
+        In: {clk}                          VHDL   
+
+        In: {reset}                        VHDL   
+
+        In: {clk_enable}                   VHDL   
+
+        In: {valid}                        VHDL   
+
+       Out: {ce_out}                       VHDL   
+
+       Out: {avg_out[31:0]}                VHDL   
+
+       Out: {valid_out}                    VHDL   
+
+       Out: {sample_in[25:0]}              VHDL   
+
+       Out: {valid_in}                     VHDL   
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  1 10:49:15 2025...

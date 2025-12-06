@@ -1,0 +1,81 @@
+ --> ddc_spec_avg_pkg
+ddc_spec_avg_tc --> ddc_spec_avg_tc
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp/Counter Limited/Increment Real World --> Increment_Real_World
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp/Counter Limited/Wrap To Zero --> Wrap_To_Zero
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp/Counter Limited --> Counter_Limited
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp/NCO1/DitherGen --> DitherGen
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp/NCO1/WaveformGen/LookUpTableGen --> LookUpTableGen
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp/NCO1/WaveformGen --> WaveformGen
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp/NCO1 --> NCO1
+spec_avg_CRD/ddc_spec_avg/DDC/Chirp --> Chirp
+spec_avg_CRD/ddc_spec_avg/DDC/LPF --> LPF
+spec_avg_CRD/ddc_spec_avg/DDC/NCO/DitherGen --> DitherGen_block
+spec_avg_CRD/ddc_spec_avg/DDC/NCO/WaveformGen/LookUpTableGen --> LookUpTableGen_block
+spec_avg_CRD/ddc_spec_avg/DDC/NCO/WaveformGen --> WaveformGen_block
+spec_avg_CRD/ddc_spec_avg/DDC/NCO --> NCO
+spec_avg_CRD/ddc_spec_avg/DDC --> DDC
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_1/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+spec_avg_CRD/ddc_spec_avg/Spec Avg --> Spec_Avg
+spec_avg_CRD/ddc_spec_avg/HDL_CMA_core/Quadrant_Mapper --> Quadrant_Mapper
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_1/SDFCommutator1 --> SDFCommutator1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_1 --> RADIX22FFT_SDF1_1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_1 --> RADIX22FFT_CTRL1_1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_2/SDFCommutator2 --> SDFCommutator2
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_2 --> RADIX22FFT_SDF2_2
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_2 --> RADIX22FFT_CTRL1_2
+spec_avg_CRD/ddc_spec_avg/FFT/TWDLROM_3_1 --> TWDLROM_3_1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_3/Complex4Multiply --> Complex4Multiply
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_3/SDFCommutator3 --> SDFCommutator3
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_3 --> RADIX22FFT_SDF1_3
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_3 --> RADIX22FFT_CTRL1_3
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_4/SDFCommutator4 --> SDFCommutator4
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_4 --> RADIX22FFT_SDF2_4
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_4 --> RADIX22FFT_CTRL1_4
+spec_avg_CRD/ddc_spec_avg/FFT/TWDLROM_5_1 --> TWDLROM_5_1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_5/Complex4Multiply --> Complex4Multiply_block
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_5/SDFCommutator5 --> SDFCommutator5
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_5 --> RADIX22FFT_SDF1_5
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_5 --> RADIX22FFT_CTRL1_5
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_6/SDFCommutator6 --> SDFCommutator6
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_6 --> RADIX22FFT_SDF2_6
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_6 --> RADIX22FFT_CTRL1_6
+spec_avg_CRD/ddc_spec_avg/FFT/TWDLROM_7_1 --> TWDLROM_7_1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_7/Complex4Multiply --> Complex4Multiply_block1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_7/SDFCommutator7 --> SDFCommutator7
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_7 --> RADIX22FFT_SDF1_7
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_7 --> RADIX22FFT_CTRL1_7
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_8/SDFCommutator8 --> SDFCommutator8
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF2_8 --> RADIX22FFT_SDF2_8
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_8 --> RADIX22FFT_CTRL1_8
+spec_avg_CRD/ddc_spec_avg/FFT/TWDLROM_9_1 --> TWDLROM_9_1
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_9/Complex4Multiply --> Complex4Multiply_block2
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_9/SDFCommutator9 --> SDFCommutator9
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_SDF1_9 --> RADIX22FFT_SDF1_9
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX22FFT_CTRL1_1 --> RADIX22FFT_CTRL1_1_block
+spec_avg_CRD/ddc_spec_avg/FFT/RADIX2FFT_bitNatural --> RADIX2FFT_bitNatural
+spec_avg_CRD/ddc_spec_avg/FFT --> FFT
+spec_avg_CRD/ddc_spec_avg/HDL_CMA_core/CordicKernelMag --> CordicKernelMag
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block1
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block2
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block3
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block4
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block5
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block6
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block7
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block8
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block9
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block10
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block11
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block12
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block13
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block14
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block15
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block16
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block17
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block18
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block19
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block20
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block21
+spec_avg_CRD/ddc_spec_avg/Complex to Magnitude-Angle --> CordicKernelMag_block22
+spec_avg_CRD/ddc_spec_avg --> ddc_spec_avg

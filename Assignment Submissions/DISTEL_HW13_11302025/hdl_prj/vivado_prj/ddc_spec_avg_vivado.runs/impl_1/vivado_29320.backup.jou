@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec  1 13:01:14 2025
+# Process ID: 29320
+# Current directory: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj/ddc_spec_avg_vivado.runs/impl_1
+# Command line: vivado.exe -log ddc_spec_avg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ddc_spec_avg.tcl -notrace
+# Log file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj/ddc_spec_avg_vivado.runs/impl_1/ddc_spec_avg.vdi
+# Journal file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj/ddc_spec_avg_vivado.runs/impl_1\vivado.jou
+# Running On        :LAPTOP-CEB4FDNH
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Xeon(R) W-10855M CPU @ 2.80GHz
+# CPU Frequency     :2808 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :34065 MB
+# Swap memory       :13427 MB
+# Total Virtual     :47492 MB
+# Available Virtual :5954 MB
+#-----------------------------------------------------------
+source ddc_spec_avg.tcl -notrace

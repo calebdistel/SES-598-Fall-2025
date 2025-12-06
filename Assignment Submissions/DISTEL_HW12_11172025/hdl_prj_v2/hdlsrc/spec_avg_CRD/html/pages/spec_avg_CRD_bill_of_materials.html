@@ -1,0 +1,3674 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+High-level Resource Utilization Report for spec_avg_CRD
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdBillOfMaterials'); else local_onload();}} catch(err) {};hdlTableShrink(this, 'Input_Port');hdlTableShrink(this, 'Output_Port');hdlTableShrink(this, 'Adder_2_21');hdlTableShrink(this, 'Subtractor_2_15');hdlTableShrink(this, 'Subtractor_2_16');hdlTableShrink(this, 'Register_2_2');hdlTableShrink(this, 'Register_2_28');hdlTableShrink(this, 'Multiplexer_2_88');hdlTableShrink(this, 'Multiplexer_2_89');hdlTableShrink(this, 'Multiplexer_2_90');hdlTableShrink(this, 'Dynamic Shift Right_2_1');hdlTableShrink(this, 'Adder_3_1');hdlTableShrink(this, 'Adder_3_2');hdlTableShrink(this, 'Subtractor_3_1');hdlTableShrink(this, 'Subtractor_3_2');hdlTableShrink(this, 'Register_3_1');hdlTableShrink(this, 'Register_3_2');hdlTableShrink(this, 'Register_3_3');hdlTableShrink(this, 'RAM_3_1');hdlTableShrink(this, 'Multiplexer_3_1');hdlTableShrink(this, 'Multiplexer_3_2');hdlTableShrink(this, 'Multiplier_4_1');hdlTableShrink(this, 'Register_4_1');hdlTableShrink(this, 'Register_4_6');hdlTableShrink(this, 'Multiplexer_4_2');hdlTableShrink(this, 'Multiplexer_4_5');hdlTableShrink(this, 'Multiplier_5_1');hdlTableShrink(this, 'Multiplier_5_2');hdlTableShrink(this, 'Adder_5_1');hdlTableShrink(this, 'Adder_5_2');hdlTableShrink(this, 'Adder_5_3');hdlTableShrink(this, 'Adder_5_4');hdlTableShrink(this, 'Adder_5_5');hdlTableShrink(this, 'Adder_5_6');hdlTableShrink(this, 'Adder_5_7');hdlTableShrink(this, 'Adder_5_8');hdlTableShrink(this, 'Register_5_1');hdlTableShrink(this, 'Register_5_2');hdlTableShrink(this, 'Multiplier_6_1');hdlTableShrink(this, 'Register_6_1');hdlTableShrink(this, 'Multiplexer_6_1');hdlTableShrink(this, 'Register_7_1');hdlTableShrink(this, 'Multiplexer_8_2');hdlTableShrink(this, 'Adder_9_1');">
+<script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<font SIZE="+2" COLOR="#000066">
+Generic Resource Report for spec_avg_CRD
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Multipliers
+</td>
+<td align="center" valign="top" style="border-style: none">
+34
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Adders/Subtractors
+</td>
+<td align="center" valign="top" style="border-style: none">
+321
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+14656
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Total 1-Bit Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+213536
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+RAMs
+</td>
+<td align="center" valign="top" style="border-style: none">
+34
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Multiplexers
+</td>
+<td align="center" valign="top" style="border-style: none">
+578
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+I/O Bits
+</td>
+<td align="center" valign="top" style="border-style: none">
+65
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Static Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+8
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Dynamic Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+47
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:376\')'})"  name="code2model" class="code2model">
+Digital Spectrometer from Chirp DDC
+</a>
+
+</h5>
+<h5>
+Registers (3)
+</h5>
+<span style="font-family:monospace">
+1-bit Register 							: 3
+</span>
+<br /><h5>
+Multiplexers (2)
+</h5>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 2
+</span>
+<br /><h5>
+Number of I/O Bits (65)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Input_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Input Bits: 4
+</span>
+<span name="Input_Port" id="Input_Port">
+<ul>
+<li>
+clk: 1 bit
+</li>
+<li>
+reset: 1 bit
+</li>
+<li>
+clk_enable: 1 bit
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:377\')'})"  name="code2model" class="code2model">
+valid
+</a>
+: 1 bit
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Output_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Output Bits: 61
+</span>
+<span name="Output_Port" id="Output_Port">
+<ul>
+<li>
+ce_out: 1 bit
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:378\')'})"  name="code2model" class="code2model">
+avg_out
+</a>
+: 32 bits
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:379\')'})"  name="code2model" class="code2model">
+avg_valid
+</a>
+: 1 bit
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:380\')'})"  name="code2model" class="code2model">
+mag_out
+</a>
+: 26 bits
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:381\')'})"  name="code2model" class="code2model">
+mag_valid
+</a>
+: 1 bit
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:247\')'})"  name="code2model" class="code2model">
+Digital Spectrometer
+</a>
+
+</h5>
+<h5>
+Multipliers (16)
+</h5>
+<span style="font-family:monospace">
+19x16-bit Multiplier 							: 4
+</span>
+<br /><span style="font-family:monospace">
+21x16-bit Multiplier 							: 4
+</span>
+<br /><span style="font-family:monospace">
+23x16-bit Multiplier 							: 4
+</span>
+<br /><span style="font-family:monospace">
+25x16-bit Multiplier 							: 4
+</span>
+<br /><h5>
+Adders/Subtractors (291)
+</h5>
+<span style="font-family:monospace">
+8x8-bit Adder 							: 9
+</span>
+<br /><span style="font-family:monospace">
+18x18-bit Adder 							: 2
+</span>
+<br /><span style="font-family:monospace">
+3x3-bit Adder 							: 22
+</span>
+<br /><span style="font-family:monospace">
+7x7-bit Adder 							: 13
+</span>
+<br /><span style="font-family:monospace">
+19x19-bit Adder 							: 4
+</span>
+<br /><span style="font-family:monospace">
+9x9-bit Adder 							: 8
+</span>
+<br /><span style="font-family:monospace">
+2x2-bit Adder 							: 12
+</span>
+<br /><span style="font-family:monospace">
+6x6-bit Adder 							: 9
+</span>
+<br /><span style="font-family:monospace">
+36x36-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+20x20-bit Adder 							: 2
+</span>
+<br /><span style="font-family:monospace">
+5x5-bit Adder 							: 9
+</span>
+<br /><span style="font-family:monospace">
+21x21-bit Adder 							: 4
+</span>
+<br /><span style="font-family:monospace">
+4x4-bit Adder 							: 9
+</span>
+<br /><span style="font-family:monospace">
+38x38-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+22x22-bit Adder 							: 2
+</span>
+<br /><span style="font-family:monospace">
+23x23-bit Adder 							: 4
+</span>
+<br /><span style="font-family:monospace">
+40x40-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+24x24-bit Adder 							: 2
+</span>
+<br /><span style="font-family:monospace">
+25x25-bit Adder 							: 4
+</span>
+<br /><span style="font-family:monospace">
+42x42-bit Adder 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_2_21')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+26x26-bit Adder 							: 49
+</span>
+<span name="Adder_2_21" id="Adder_2_21">
+<ul class="SystemdefinedCollapse" id="8cd9d65c-fdb3-4506-a7cd-9335da11b9f8" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YAdder
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XAdder
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '8cd9d65c-fdb3-4506-a7cd-9335da11b9f8')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span style="font-family:monospace">
+18x18-bit Subtractor 							: 2
+</span>
+<br /><span style="font-family:monospace">
+19x19-bit Subtractor 							: 4
+</span>
+<br /><span style="font-family:monospace">
+20x20-bit Subtractor 							: 14
+</span>
+<br /><span style="font-family:monospace">
+11x11-bit Subtractor 							: 8
+</span>
+<br /><span style="font-family:monospace">
+17-bit Subtractor 							: 24
+</span>
+<br /><span style="font-family:monospace">
+36x36-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+21x21-bit Subtractor 							: 4
+</span>
+<br /><span style="font-family:monospace">
+38x38-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+22x22-bit Subtractor 							: 2
+</span>
+<br /><span style="font-family:monospace">
+23x23-bit Subtractor 							: 4
+</span>
+<br /><span style="font-family:monospace">
+40x40-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+24x24-bit Subtractor 							: 2
+</span>
+<br /><span style="font-family:monospace">
+25x25-bit Subtractor 							: 4
+</span>
+<br /><span style="font-family:monospace">
+42x42-bit Subtractor 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_2_15')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+26x26-bit Subtractor 							: 49
+</span>
+<span name="Subtractor_2_15" id="Subtractor_2_15">
+<ul class="SystemdefinedCollapse" id="e1d404d3-b58b-440f-a6d2-13c1968ceb64" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+YSub
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+XSubtractor
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'e1d404d3-b58b-440f-a6d2-13c1968ceb64')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_2_16')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+27-bit Subtractor 							: 2
+</span>
+<span name="Subtractor_2_16" id="Subtractor_2_16">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+abs1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+abs_rsvd
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (740)
+</h5>
+<span style="font-family:monospace">
+16-bit Register 							: 30
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 230
+</span>
+<span name="Register_2_2" id="Register_2_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Delay_ValidIn
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+DelayValidOut
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+8-bit Register 							: 4
+</span>
+<br /><span style="font-family:monospace">
+2-bit Register 							: 41
+</span>
+<br /><span style="font-family:monospace">
+17-bit Register 							: 18
+</span>
+<br /><span style="font-family:monospace">
+18-bit Register 							: 28
+</span>
+<br /><span style="font-family:monospace">
+3-bit Register 							: 47
+</span>
+<br /><span style="font-family:monospace">
+7-bit Register 							: 8
+</span>
+<br /><span style="font-family:monospace">
+19-bit Register 							: 24
+</span>
+<br /><span style="font-family:monospace">
+9-bit Register 							: 6
+</span>
+<br /><span style="font-family:monospace">
+6-bit Register 							: 8
+</span>
+<br /><span style="font-family:monospace">
+35-bit Register 							: 12
+</span>
+<br /><span style="font-family:monospace">
+36-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+20-bit Register 							: 28
+</span>
+<br /><span style="font-family:monospace">
+5-bit Register 							: 4
+</span>
+<br /><span style="font-family:monospace">
+21-bit Register 							: 24
+</span>
+<br /><span style="font-family:monospace">
+4-bit Register 							: 4
+</span>
+<br /><span style="font-family:monospace">
+37-bit Register 							: 12
+</span>
+<br /><span style="font-family:monospace">
+38-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+22-bit Register 							: 28
+</span>
+<br /><span style="font-family:monospace">
+23-bit Register 							: 24
+</span>
+<br /><span style="font-family:monospace">
+39-bit Register 							: 12
+</span>
+<br /><span style="font-family:monospace">
+40-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+24-bit Register 							: 38
+</span>
+<br /><span style="font-family:monospace">
+25-bit Register 							: 32
+</span>
+<br /><span style="font-family:monospace">
+41-bit Register 							: 12
+</span>
+<br /><span style="font-family:monospace">
+42-bit Register 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_2_28')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+26-bit Register 							: 58
+</span>
+<span name="Register_2_28" id="Register_2_28">
+<ul class="SystemdefinedCollapse" id="1745724f-2ce8-4f0e-988b-519d99da7258" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+DelayRealInput
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+DelayImagInput
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+DelayQuadMapper1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+DelayQuadMapper2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline11
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline21
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline31
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline41
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline51
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline61
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline71
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline81
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline9
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline91
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline10
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline101
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline111
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline112
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline12
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline121
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline13
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline131
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline14
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline141
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline15
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline151
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline16
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline161
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline17
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline171
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline18
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline181
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline19
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline191
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline20
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline201
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline211
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline212
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline22
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline221
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline23
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline231
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Pipeline24
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+Output_Register
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '1745724f-2ce8-4f0e-988b-519d99da7258')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><h5>
+RAMs (33)
+</h5>
+<span style="font-family:monospace">
+256x17-bit RAM 							: 1
+</span>
+<br /><span style="font-family:monospace">
+8x17-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+128x18-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x18-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+64x19-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x19-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+32x20-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x20-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+16x21-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x21-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x22-bit RAM 							: 4
+</span>
+<br /><span style="font-family:monospace">
+4x23-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x23-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x24-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8x25-bit RAM 							: 2
+</span>
+<br /><span style="font-family:monospace">
+512x25-bit RAM 							: 2
+</span>
+<br /><h5>
+Multiplexers (548)
+</h5>
+<span style="font-family:monospace">
+2-bit 8-to-1 Multiplexer 							: 18
+</span>
+<br /><span style="font-family:monospace">
+1-bit 7-to-1 Multiplexer 							: 27
+</span>
+<br /><span style="font-family:monospace">
+8-bit 5-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+1-bit 4-to-1 Multiplexer 							: 19
+</span>
+<br /><span style="font-family:monospace">
+8-bit 6-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+2-bit 9-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+17-bit 8-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+3-bit 8-to-1 Multiplexer 							: 9
+</span>
+<br /><span style="font-family:monospace">
+3-bit 7-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+1-bit 12-to-1 Multiplexer 							: 10
+</span>
+<br /><span style="font-family:monospace">
+3-bit 15-to-1 Multiplexer 							: 5
+</span>
+<br /><span style="font-family:monospace">
+8-bit 7-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+2-bit 7-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+17-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+8-bit 10-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+17-bit 9-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+3-bit 14-to-1 Multiplexer 							: 5
+</span>
+<br /><span style="font-family:monospace">
+17-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+1-bit 3-to-1 Multiplexer 							: 10
+</span>
+<br /><span style="font-family:monospace">
+7-bit 5-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+7-bit 6-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+19-bit 2-to-1 Multiplexer 							: 20
+</span>
+<br /><span style="font-family:monospace">
+18-bit 8-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+7-bit 7-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+18-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+7-bit 10-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+18-bit 9-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+18-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+3-bit 6-to-1 Multiplexer 							: 10
+</span>
+<br /><span style="font-family:monospace">
+1-bit 6-to-1 Multiplexer 							: 6
+</span>
+<br /><span style="font-family:monospace">
+20-bit 2-to-1 Multiplexer 							: 24
+</span>
+<br /><span style="font-family:monospace">
+6-bit 6-to-1 Multiplexer 							: 5
+</span>
+<br /><span style="font-family:monospace">
+11-bit 2-to-1 Multiplexer 							: 16
+</span>
+<br /><span style="font-family:monospace">
+9-bit 4-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+9-bit 2-to-1 Multiplexer 							: 6
+</span>
+<br /><span style="font-family:monospace">
+2-bit 2-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+7-bit 2-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+16-bit 10-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+17-bit 2-to-1 Multiplexer 							: 48
+</span>
+<br /><span style="font-family:monospace">
+6-bit 5-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+19-bit 8-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+6-bit 7-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+19-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+6-bit 10-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+19-bit 9-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+19-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+5-bit 5-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+5-bit 6-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+21-bit 2-to-1 Multiplexer 							: 20
+</span>
+<br /><span style="font-family:monospace">
+20-bit 8-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+5-bit 7-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+20-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+5-bit 10-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+20-bit 9-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+20-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+4-bit 5-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+4-bit 6-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+21-bit 8-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+4-bit 7-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+21-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+4-bit 10-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+21-bit 9-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+21-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+3-bit 5-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+23-bit 2-to-1 Multiplexer 							: 20
+</span>
+<br /><span style="font-family:monospace">
+22-bit 6-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+1-bit 9-to-1 Multiplexer 							: 7
+</span>
+<br /><span style="font-family:monospace">
+1-bit 5-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+3-bit 9-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+22-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+22-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+2-bit 5-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+2-bit 6-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+23-bit 6-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+23-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+23-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+1-bit 8-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+24-bit 2-to-1 Multiplexer 							: 6
+</span>
+<br /><span style="font-family:monospace">
+25-bit 2-to-1 Multiplexer 							: 28
+</span>
+<br /><span style="font-family:monospace">
+24-bit 6-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+24-bit 4-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+24-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+25-bit 4-to-1 Multiplexer 							: 4
+</span>
+<br /><span style="font-family:monospace">
+3-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+25-bit 3-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+9-bit 8-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+9-bit 9-to-1 Multiplexer 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_88')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+27-bit 2-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_2_88" id="Multiplexer_2_88">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+abs1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+abs_rsvd
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_89')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 25
+</span>
+<span name="Multiplexer_2_89" id="Multiplexer_2_89">
+<ul class="SystemdefinedCollapse" id="4b610b48-3497-4e98-98d7-7f42e5e4819e" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+relop
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '4b610b48-3497-4e98-98d7-7f42e5e4819e')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_2_90')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+26-bit 2-to-1 Multiplexer 							: 50
+</span>
+<span name="Multiplexer_2_90" id="Multiplexer_2_90">
+<ul class="SystemdefinedCollapse" id="f7737d13-3ee9-4a8e-b485-f9f280ab16da" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+mux1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+mux
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxY
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+MuxX
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+muxMag
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'f7737d13-3ee9-4a8e-b485-f9f280ab16da')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><h5>
+Number of Shift operators (55)
+</h5>
+<span style="font-family:monospace">
+Static Shift Left 							: 8
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Dynamic Shift Right_2_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+26-bit Dynamic Shift Right 							: 47
+</span>
+<span name="Dynamic Shift Right_2_1" id="Dynamic Shift Right_2_1">
+<ul class="SystemdefinedCollapse" id="f506657c-e3cf-45a4-871d-46b5ac600c8b" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:131\')'})"  name="code2model" class="code2model">
+dynamic_shift1
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, 'f506657c-e3cf-45a4-871d-46b5ac600c8b')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:142\')'})"  name="code2model" class="code2model">
+Spectral Averager
+</a>
+
+</h5>
+<h5>
+Adders/Subtractors (4)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+14x14-bit Adder 							: 1
+</span>
+<span name="Adder_3_1" id="Adder_3_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:158\')'})"  name="code2model" class="code2model">
+adder
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_3_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+32x32-bit Adder 							: 1
+</span>
+<span name="Adder_3_2" id="Adder_3_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:223\')'})"  name="code2model" class="code2model">
+Add1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+14x14-bit Subtractor 							: 1
+</span>
+<span name="Subtractor_3_1" id="Subtractor_3_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:158\')'})"  name="code2model" class="code2model">
+moduloWrap
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_3_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+27x27-bit Subtractor 							: 1
+</span>
+<span name="Subtractor_3_2" id="Subtractor_3_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:201\')'})"  name="code2model" class="code2model">
+Add
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (13829)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 4
+</span>
+<span name="Register_3_1" id="Register_3_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:151\')'})"  name="code2model" class="code2model">
+delayMatch1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:150\')'})"  name="code2model" class="code2model">
+delayMatch
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:152\')'})"  name="code2model" class="code2model">
+delayMatch2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:215\')'})"  name="code2model" class="code2model">
+Delay2
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_3_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+14-bit Register 							: 13313
+</span>
+<span name="Register_3_2" id="Register_3_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:158\')'})"  name="code2model" class="code2model">
+Fast Counter
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:198\')'})"  name="code2model" class="code2model">
+Delay
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_3_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+32-bit Register 							: 512
+</span>
+<span name="Register_3_3" id="Register_3_3">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:206\')'})"  name="code2model" class="code2model">
+Delay1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+RAMs (1)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'RAM_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16384x26-bit RAM 							: 1
+</span>
+<span name="RAM_3_1" id="RAM_3_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:222\')'})"  name="code2model" class="code2model">
+Simple Dual Port RAM
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Multiplexers (4)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_3_1" id="Multiplexer_3_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:158\')'})"  name="code2model" class="code2model">
+compare
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:158\')'})"  name="code2model" class="code2model">
+switchReset
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_3_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+14-bit 2-to-1 Multiplexer 							: 2
+</span>
+<span name="Multiplexer_3_2" id="Multiplexer_3_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:158\')'})"  name="code2model" class="code2model">
+switch
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:158\')'})"  name="code2model" class="code2model">
+switchReset1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:127\')'})"  name="code2model" class="code2model">
+DDC
+</a>
+
+</h5>
+<h5>
+Multipliers (1)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplier_4_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x16-bit Multiplier 							: 1
+</span>
+<span name="Multiplier_4_1" id="Multiplier_4_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:6\')'})"  name="code2model" class="code2model">
+Mixer
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Adders/Subtractors (5)
+</h5>
+<span style="font-family:monospace">
+31x31-bit Adder 							: 3
+</span>
+<br /><span style="font-family:monospace">
+13x13-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+17-bit Subtractor 							: 1
+</span>
+<br /><h5>
+Registers (28)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_4_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 16
+</span>
+<span name="Register_4_1" id="Register_4_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:100\')'})"  name="code2model" class="code2model">
+delayMatch1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:102\')'})"  name="code2model" class="code2model">
+delayMatch3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:145\')'})"  name="code2model" class="code2model">
+Downsample_Valid_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+31-bit Register 							: 3
+</span>
+<br /><span style="font-family:monospace">
+19-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+13-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+11-bit Register 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_4_6')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16-bit Register 							: 6
+</span>
+<span name="Register_4_6" id="Register_4_6">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:99\')'})"  name="code2model" class="code2model">
+delayMatch
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:101\')'})"  name="code2model" class="code2model">
+delayMatch2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:10\')'})"  name="code2model" class="code2model">
+Downsample_Signal_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Multiplexers (11)
+</h5>
+<span style="font-family:monospace">
+31-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_4_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 4
+</span>
+<span name="Multiplexer_4_2" id="Multiplexer_4_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:145\')'})"  name="code2model" class="code2model">
+Downsample_Valid_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+11-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+11-bit 3-to-1 Multiplexer 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_4_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16-bit 2-to-1 Multiplexer 							: 4
+</span>
+<span name="Multiplexer_4_5" id="Multiplexer_4_5">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:10\')'})"  name="code2model" class="code2model">
+Downsample_Signal_bypass
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:12\')'})"  name="code2model" class="code2model">
+LPF
+</a>
+
+</h5>
+<h5>
+Multipliers (16)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplier_5_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x16-bit Multiplier 							: 8
+</span>
+<span name="Multiplier_5_1" id="Multiplier_5_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:36\')'})"  name="code2model" class="code2model">
+Product1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:91\')'})"  name="code2model" class="code2model">
+Product15
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:90\')'})"  name="code2model" class="code2model">
+Product14
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:83\')'})"  name="code2model" class="code2model">
+Product13
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:82\')'})"  name="code2model" class="code2model">
+Product12
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:43\')'})"  name="code2model" class="code2model">
+Product3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:42\')'})"  name="code2model" class="code2model">
+Product2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:30\')'})"  name="code2model" class="code2model">
+Product
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplier_5_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x17-bit Multiplier 							: 8
+</span>
+<span name="Multiplier_5_2" id="Multiplier_5_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:75\')'})"  name="code2model" class="code2model">
+Product11
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:74\')'})"  name="code2model" class="code2model">
+Product10
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:67\')'})"  name="code2model" class="code2model">
+Product9
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:66\')'})"  name="code2model" class="code2model">
+Product8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:59\')'})"  name="code2model" class="code2model">
+Product7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:58\')'})"  name="code2model" class="code2model">
+Product6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:51\')'})"  name="code2model" class="code2model">
+Product5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:50\')'})"  name="code2model" class="code2model">
+Product4
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Adders/Subtractors (15)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+38x38-bit Adder 							: 1
+</span>
+<span name="Adder_5_1" id="Adder_5_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:35\')'})"  name="code2model" class="code2model">
+Sum
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+20x20-bit Adder 							: 3
+</span>
+<span name="Adder_5_2" id="Adder_5_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:45\')'})"  name="code2model" class="code2model">
+Sum3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:52\')'})"  name="code2model" class="code2model">
+Sum4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:77\')'})"  name="code2model" class="code2model">
+Sum11
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18x18-bit Adder 							: 5
+</span>
+<span name="Adder_5_3" id="Adder_5_3">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:44\')'})"  name="code2model" class="code2model">
+Sum2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:53\')'})"  name="code2model" class="code2model">
+Sum5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:61\')'})"  name="code2model" class="code2model">
+Sum7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:60\')'})"  name="code2model" class="code2model">
+Sum6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:68\')'})"  name="code2model" class="code2model">
+Sum8
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x16-bit Adder 							: 1
+</span>
+<span name="Adder_5_4" id="Adder_5_4">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:69\')'})"  name="code2model" class="code2model">
+Sum9
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+24x24-bit Adder 							: 2
+</span>
+<span name="Adder_5_5" id="Adder_5_5">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:76\')'})"  name="code2model" class="code2model">
+Sum10
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:84\')'})"  name="code2model" class="code2model">
+Sum12
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_6')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+23x23-bit Adder 							: 1
+</span>
+<span name="Adder_5_6" id="Adder_5_6">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:85\')'})"  name="code2model" class="code2model">
+Sum13
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_7')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+27x27-bit Adder 							: 1
+</span>
+<span name="Adder_5_7" id="Adder_5_7">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:93\')'})"  name="code2model" class="code2model">
+Sum15
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_5_8')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+28x28-bit Adder 							: 1
+</span>
+<span name="Adder_5_8" id="Adder_5_8">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:92\')'})"  name="code2model" class="code2model">
+Sum14
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (30)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_5_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16-bit Register 							: 15
+</span>
+<span name="Register_5_1" id="Register_5_1">
+<ul class="SystemdefinedCollapse" id="1b76e454-43d0-43c4-b306-b84a16fb01ca" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:15\')'})"  name="code2model" class="code2model">
+Delay
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:16\')'})"  name="code2model" class="code2model">
+Delay1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:40\')'})"  name="code2model" class="code2model">
+Delay2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:41\')'})"  name="code2model" class="code2model">
+Delay3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:48\')'})"  name="code2model" class="code2model">
+Delay4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:49\')'})"  name="code2model" class="code2model">
+Delay5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:56\')'})"  name="code2model" class="code2model">
+Delay6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:57\')'})"  name="code2model" class="code2model">
+Delay7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:64\')'})"  name="code2model" class="code2model">
+Delay8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:65\')'})"  name="code2model" class="code2model">
+Delay9
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:72\')'})"  name="code2model" class="code2model">
+Delay10
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:73\')'})"  name="code2model" class="code2model">
+Delay11
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:80\')'})"  name="code2model" class="code2model">
+Delay12
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:81\')'})"  name="code2model" class="code2model">
+Delay13
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:88\')'})"  name="code2model" class="code2model">
+Delay14
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '1b76e454-43d0-43c4-b306-b84a16fb01ca')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_5_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 15
+</span>
+<span name="Register_5_2" id="Register_5_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:149\')'})"  name="code2model" class="code2model">
+Delay15
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:105\')'})"  name="code2model" class="code2model">
+Chirp
+</a>
+
+</h5>
+<h5>
+Multipliers (1)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplier_6_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x32-bit Multiplier 							: 1
+</span>
+<span name="Multiplier_6_1" id="Multiplier_6_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:114\')'})"  name="code2model" class="code2model">
+Product
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Adders/Subtractors (5)
+</h5>
+<span style="font-family:monospace">
+31x31-bit Adder 							: 3
+</span>
+<br /><span style="font-family:monospace">
+13x13-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+17-bit Subtractor 							: 1
+</span>
+<br /><h5>
+Registers (25)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_6_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 15
+</span>
+<span name="Register_6_1" id="Register_6_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'gm_spec_avg_CRD:25\')'})"  name="code2model" class="code2model">
+delayMatch
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+32-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+31-bit Register 							: 3
+</span>
+<br /><span style="font-family:monospace">
+19-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+13-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+11-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+16-bit Register 							: 3
+</span>
+<br /><h5>
+Multiplexers (11)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_6_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+15-bit 3-to-1 Multiplexer 							: 1
+</span>
+<span name="Multiplexer_6_1" id="Multiplexer_6_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:125\')'})"  name="code2model" class="code2model">
+prelookup_comp
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+32-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+31-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+11-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+11-bit 3-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+16-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:126\')'})"  name="code2model" class="code2model">
+Counter
+Limited
+</a>
+
+</h5>
+<h5>
+Registers (1)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_7_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16-bit Register 							: 1
+</span>
+<span name="Register_7_1" id="Register_7_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:126:4\')'})"  name="code2model" class="code2model">
+Output
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:126:8\')'})"  name="code2model" class="code2model">
+Wrap To Zero
+</a>
+
+</h5>
+<h5>
+Multiplexers (2)
+</h5>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_8_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16-bit 2-to-1 Multiplexer 							: 1
+</span>
+<span name="Multiplexer_8_2" id="Multiplexer_8_2">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:126:8:3\')'})"  name="code2model" class="code2model">
+FixPt_Switch
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:126:7\')'})"  name="code2model" class="code2model">
+Increment
+Real World
+</a>
+
+</h5>
+<h5>
+Adders/Subtractors (1)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_9_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x16-bit Adder 							: 1
+</span>
+<span name="Adder_9_1" id="Adder_9_1">
+<ul>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'spec_avg_CRD:126:7:4\')'})"  name="code2model" class="code2model">
+FixPt_Sum1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p>
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script>
+</body>
+
+</html>

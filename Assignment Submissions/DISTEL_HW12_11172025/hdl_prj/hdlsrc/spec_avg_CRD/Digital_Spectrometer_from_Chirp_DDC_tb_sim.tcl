@@ -1,0 +1,3 @@
+exec xelab -debug typical -top Digital_Spectrometer_from_Chirp_DDC_tb -snapshot Digital_Spectrometer_from_Chirp_DDC_tb_snapshot
+exec xsim -tclbatch simulation.tcl Digital_Spectrometer_from_Chirp_DDC_tb_snapshot
+source xsim.dir/Digital_Spectrometer_from_Chirp_DDC_tb_snapshot/xsim_script.tcl

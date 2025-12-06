@@ -1,0 +1,1 @@
+"ddc_spec_avg" --timeprecision_vhdl "1ps" --override_timeprecision -dll --snapshot "design" -debug "wave" 

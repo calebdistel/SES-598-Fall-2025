@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1764622567">
+  <File Type="ROUTE-PWR" Name="ddc_spec_avg_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ddc_spec_avg.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="ddc_spec_avg_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ddc_spec_avg_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="ddc_spec_avg_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="ddc_spec_avg.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ddc_spec_avg_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ddc_spec_avg_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="ddc_spec_avg_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ddc_spec_avg_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ddc_spec_avg_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ddc_spec_avg.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ddc_spec_avg_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ddc_spec_avg_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ddc_spec_avg_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ddc_spec_avg_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ddc_spec_avg_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ddc_spec_avg_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ddc_spec_avg_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ddc_spec_avg_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ddc_spec_avg_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ddc_spec_avg_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ddc_spec_avg_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="ddc_spec_avg.bin"/>
+  <File Type="PLACE-TIMING" Name="ddc_spec_avg_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ddc_spec_avg_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="ddc_spec_avg_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ddc_spec_avg_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="ddc_spec_avg.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ddc_spec_avg_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ddc_spec_avg_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ddc_spec_avg_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="ddc_spec_avg.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="ddc_spec_avg_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ddc_spec_avg_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ddc_spec_avg_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ddc_spec_avg_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ddc_spec_avg_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ddc_spec_avg_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ddc_spec_avg_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ddc_spec_avg_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ddc_spec_avg_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ddc_spec_avg_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="ddc_spec_avg_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="ddc_spec_avg_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ddc_spec_avg_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ddc_spec_avg_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ddc_spec_avg_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ddc_spec_avg_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ddc_spec_avg_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ddc_spec_avg_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ddc_spec_avg_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ddc_spec_avg_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ddc_spec_avg_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ddc_spec_avg_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ddc_spec_avg_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ddc_spec_avg_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ddc_spec_avg_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ddc_spec_avg_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ddc_spec_avg_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="ddc_spec_avg.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ddc_spec_avg_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ddc_spec_avg_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="ddc_spec_avg.nky"/>
+  <File Type="BITSTR-BMM" Name="ddc_spec_avg_bd.bmm"/>
+  <File Type="PDI-FILE" Name="ddc_spec_avg.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="ddc_spec_avg_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="ddc_spec_avg_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="ddc_spec_avg.rcfi"/>
+  <File Type="CFI_FILE" Name="ddc_spec_avg.cfi"/>
+  <File Type="RNPI_FILE" Name="ddc_spec_avg.rnpi"/>
+  <File Type="NPI_FILE" Name="ddc_spec_avg.npi"/>
+  <File Type="RBD_FILE" Name="ddc_spec_avg.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ddc_spec_avg.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ddc_spec_avg.sysdef"/>
+  <File Type="BG-BGN" Name="ddc_spec_avg.bgn"/>
+  <File Type="BG-DRC" Name="ddc_spec_avg.drc"/>
+  <File Type="RDI-RDI" Name="ddc_spec_avg.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="ddc_spec_avg_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ddc_spec_avg_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Increment_Real_World.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Wrap_To_Zero.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Counter_Limited.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/DitherGen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/LookUpTableGen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/WaveformGen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/NCO1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Chirp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Complex4Multiply.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Complex4Multiply_block.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Complex4Multiply_block1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Complex4Multiply_block2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block10.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block11.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block12.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block13.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block14.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block15.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block16.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block17.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block18.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block19.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block20.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block21.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block22.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block5.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/CordicKernelMag_block9.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/LPF.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/DDC.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/ddc_spec_avg_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SimpleDualPortRAM_generic.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/TWDLROM_3_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/TWDLROM_5_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_5.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator5.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_5.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/TWDLROM_7_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/TWDLROM_9_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_1_block.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/SDFCommutator9.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_9.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/RADIX2FFT_bitNatural.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/FFT.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Quadrant_Mapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/Spec_Avg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/ddc_spec_avg_tc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/ddc_spec_avg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/DitherGen_block.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/LookUpTableGen_block.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/WaveformGen_block.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/NCO.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdlsrc/spec_avg_CRD/clock_constraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ddc_spec_avg"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Area_Explore" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">1</Option>
+    </Step>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="0"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

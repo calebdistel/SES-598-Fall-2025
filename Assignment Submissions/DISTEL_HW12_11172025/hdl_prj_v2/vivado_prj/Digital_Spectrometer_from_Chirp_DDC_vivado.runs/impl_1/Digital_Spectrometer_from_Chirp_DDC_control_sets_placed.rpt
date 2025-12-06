@@ -1,0 +1,215 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Dec  1 14:44:46 2025
+| Host         : LAPTOP-CEB4FDNH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Digital_Spectrometer_from_Chirp_DDC_control_sets_placed.rpt
+| Design       : Digital_Spectrometer_from_Chirp_DDC
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   137 |
+|    Minimum number of control sets                        |   137 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   598 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   137 |
+| >= 0 to < 4        |    67 |
+| >= 4 to < 6        |    12 |
+| >= 6 to < 8        |     7 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    47 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             848 |          264 |
+| Yes          | No                    | Yes                    |           20898 |         4344 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+| Clock Signal |                                            Enable Signal                                           | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+----------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk         | u_DDC/u_LO/u_Wave_inst/validcnt0                                                                   | reset            |                1 |              1 |         1.00 |
+|  clk         | u_DDC/u_Chirp/u_NCO1/u_Wave_inst/validcnt0                                                         | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/Radix22TwdlMapping_cnt                                    | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_wrAddr_reg4_out     | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_1_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFController_procEnb_reg         | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFCummutator_wrEnb_reg             | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_2_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_7_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFCummutator_wrxEnb_reg_1          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_6_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_8_1/SDFController_rdAddr_reg                           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_3_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_8_1/SDFController_wrCount                              | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_5_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_8_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_6_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_XState              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_wrAddr_reg          | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_1_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_twdlROM_3_1/Radix22TwdlMapping_phase                         | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_twdlROM_7_1/Radix22TwdlMapping_phase                         | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_2_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/phase_0_reg_0[0]                                          | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_XState              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_3_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_7_1/SDFController_rdAddr_reg                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_7_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_4_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_7_1/SDFController_wrCount                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_XState              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_twdlROM_9/Radix22TwdlMapping_phase                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_5_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_4_1/SDFController_rdState                              | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_2_1/SDFController_rdState                              | reset            |                2 |              3 |         1.50 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_8_1/SDFController_rdState                              | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_6_1/SDFController_wrCount                              | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_6_1/SDFController_rdState                              | reset            |                2 |              3 |         1.50 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_6_1/SDFController_rdAddr_reg                           | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_xWrAddr             | reset            |                2 |              3 |         1.50 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_wrAddr_reg          | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/SDFOutmux_btfPipe_vld_reg_0[0]                            | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_xX_vld_reg          | reset            |                1 |              4 |         4.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_xX_vld_reg          | reset            |                2 |              4 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_xX_vld_reg          | reset            |                1 |              4 |         4.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_5_1/SDFController_rdAddr_reg                           | reset            |                1 |              4 |         4.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_5_1/SDFController_wrCount                              | reset            |                2 |              4 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_xX_vld_reg          | reset            |                2 |              4 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_rdCnt               | reset            |                1 |              4 |         4.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_xX_vld_reg          | reset            |                3 |              4 |         1.33 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_4_1/SDFController_rdAddr_reg                           | reset            |                1 |              5 |         5.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/E[0]                              | reset            |                1 |              5 |         5.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_rdCnt               | reset            |                1 |              5 |         5.00 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/SDFOutmux_btfPipe_vld_reg[0]                              | reset            |                3 |              5 |         1.67 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_3_1/SDFController_wrCount                              | reset            |                2 |              6 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_rdCnt               | reset            |                3 |              6 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_3_1/SDFController_rdAddr_reg                           | reset            |                2 |              6 |         3.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_2_1/SDFController_rdAddr_reg                           | reset            |                3 |              7 |         2.33 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_rdCnt               | reset            |                3 |              7 |         2.33 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL2_2_1/SDFController_wrCount                              | reset            |                2 |              7 |         3.50 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/E[0]                                                      | reset            |                2 |              7 |         3.50 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_1_1/SDFController_rdAddr_reg                           | reset            |                2 |              8 |         4.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_CTRL1_1_1/SDFController_wrCount                              | reset            |                3 |              8 |         2.67 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_rdCnt               | reset            |                4 |              8 |         2.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/E[0]                                | reset            |                3 |             11 |         3.67 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/ce_out                                                    | reset            |                9 |             17 |         1.89 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_wrxEnb_reg_0        | reset            |                3 |             18 |         6.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFOutmux_btf2Pipe_re             | reset            |                5 |             19 |         3.80 |
+|  clk         | u_DDC/u_Chirp/u_NCO1/pn_reg[18]_i_1_n_0                                                            | reset            |                5 |             19 |         3.80 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_wrAddr_reg          | reset            |                8 |             25 |         3.12 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/u_dataXMEM_re_0_1/p_0_in__0       |                  |                4 |             28 |         7.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFOutmux_btf2Pipe_re             | reset            |                9 |             36 |         4.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_wrxEnb_reg_0        | reset            |                8 |             37 |         4.62 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFOutmux_btf2Pipe_re             | reset            |               11 |             38 |         3.45 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_wrxEnb_reg_0        | reset            |                7 |             39 |         5.57 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFOutmux_btf2Pipe_re             | reset            |                8 |             40 |         5.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_wrxEnb_reg_0        | reset            |                6 |             41 |         6.83 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFOutmux_btf2Pipe_re             | reset            |                8 |             42 |         5.25 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_wrAddr_reg          | reset            |               12 |             43 |         3.58 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_wrxEnb_reg_0        | reset            |                9 |             43 |         4.78 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFOutmux_btf2Pipe_re             | reset            |                7 |             44 |         6.29 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_wrAddr_reg          | reset            |               13 |             44 |         3.38 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_wrAddr_reg          | reset            |               12 |             45 |         3.75 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_xX_vld_reg          | reset            |                7 |             46 |         6.57 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFOutmux_btf2Pipe_re             | reset            |                9 |             46 |         5.11 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/E[0]                              | reset            |               11 |             46 |         4.18 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_wrAddr_reg_reg_0[0] | reset            |               15 |             46 |         3.07 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_wrAddr_reg          | reset            |               14 |             46 |         3.29 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/u_dataXMEM_im_0_2/p_0_in          |                  |                6 |             48 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_xX_vld_reg          | reset            |                9 |             48 |         5.33 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFOutmux_btf2Pipe_re             | reset            |               11 |             48 |         4.36 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFCummutator_wrXData_re_reg_0      | reset            |                8 |             50 |         6.25 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_xX_vld_reg          | reset            |               13 |             50 |         3.85 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/SDFCummutator_wrEnb_reg_reg[0]                            | reset            |               11 |             50 |         4.55 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/u_dataXMEM_im_0_9/p_0_in            |                  |               13 |             50 |         3.85 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFOutmux_btf2Pipe_re               | reset            |                8 |             50 |         6.25 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/rdStateMachineBitNatural_doutVldReg1_reg[0]               | reset            |                7 |             50 |         7.14 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/u_dataXMEM_re_0_3/p_0_in__0       |                  |                7 |             56 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/u_dataXMEM_re_0_4/p_0_in__1       |                  |                7 |             56 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/u_dataXMEM_im_0_5/p_0_in          |                  |                8 |             64 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/u_dataXMEM_im_0_6/p_0_in__3       |                  |                8 |             64 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/p_0_in__2                         |                  |                8 |             64 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/p_0_in                            |                  |                8 |             64 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/p_0_in__1                         |                  |                8 |             64 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/u_dataXMEM_im_0_7/p_0_in__2       |                  |                8 |             64 |         8.00 |
+|  clk         | u_Digital_Spectrometer/u_512_pt_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/u_dataXMEM_im_0_8/p_0_in__1       |                  |                8 |             64 |         8.00 |
+|  clk         | clk_enable                                                                                         |                  |               56 |             81 |         1.45 |
+|  clk         | clk_enable                                                                                         | reset            |              142 |            443 |         3.12 |
+|  clk         | u_Digital_Spectrometer/u_Spectral_Averager/enb_1_2_0_gated_2                                       |                  |              128 |            544 |         4.25 |
+|  clk         | u_Digital_Spectrometer/u_Spectral_Averager/enb_1_2_0_gated_2                                       | reset            |              130 |            558 |         4.29 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/enb_1_2_0_BUFG                                            |                  |             1618 |           6751 |         4.17 |
+|  clk         | u_Digital_Spectrometer_from_Chirp_DDC_tc/enb_1_2_0_BUFG                                            | reset            |             3691 |          18465 |         5.00 |
++--------------+----------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,1 @@
+var modelInfo = {model:"Digital Spectrometer from Chirp DDC"};var modelHierarchy=[{model:"Digital Spectrometer from Chirp DDC",relativePath:"_internal.html",parent:"null"},];var AddCode = true;

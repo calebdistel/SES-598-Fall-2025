@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec  1 11:28:22 2025
+# Process ID: 6904
+# Current directory: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj
+# Command line: vivado.exe -mode batch -notrace -source ddc_spec_avg_Xilinx_Vivado_run.tcl
+# Log file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj/vivado.log
+# Journal file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj\vivado.jou
+# Running On        :LAPTOP-CEB4FDNH
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Xeon(R) W-10855M CPU @ 2.80GHz
+# CPU Frequency     :2808 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :34065 MB
+# Swap memory       :12348 MB
+# Total Virtual     :46413 MB
+# Available Virtual :8500 MB
+#-----------------------------------------------------------
+source ddc_spec_avg_Xilinx_Vivado_run.tcl -notrace
+### Open existing Xilinx Vivado 2024.1 project <a href="matlab:downstream.handle('Model','spec_avg_CRD').openTargetTool;">hdl_prj\vivado_prj\ddc_spec_avg_vivado.xpr</a>
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj'
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/vivado_prj/ddc_spec_avg_vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 500.883 ; gain = 201.488
+WARNING: [Vivado 12-818] No files matched '*'
+### Set Xilinx Vivado 2024.1 project properties
+ERROR: [Common 17-69] Command failed: Part 'xcku11p-ffva1156-1-e' not found
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  1 11:28:32 2025...

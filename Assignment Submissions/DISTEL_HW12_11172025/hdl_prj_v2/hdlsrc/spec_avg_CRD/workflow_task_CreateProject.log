@@ -1,0 +1,23 @@
+Task "Create Project" successful.
+Generated logfile: 
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Dec  1 14:09:28 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Digital_Spectrometer_from_Chirp_DDC_Xilinx_Vivado_run.tcl -notrace
+### Create new Xilinx Vivado 2024.1 project <a href="matlab:downstream.handle('Model','spec_avg_CRD').openTargetTool;">hdl_prj_v2\vivado_prj\Digital_Spectrometer_from_Chirp_DDC_vivado.xpr</a>
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW12_11172025/hdl_prj_v2/vivado_prj'
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 497.359 ; gain = 200.352
+### Set Xilinx Vivado 2024.1 project properties
+### Update Xilinx Vivado 2024.1 project with HDL source files
+WARNING: [Vivado 12-818] No files matched '*.tcl'
+### Close Xilinx Vivado 2024.1 project.
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  1 14:09:44 2025...
+
+Elapsed time is 18.5808 seconds.

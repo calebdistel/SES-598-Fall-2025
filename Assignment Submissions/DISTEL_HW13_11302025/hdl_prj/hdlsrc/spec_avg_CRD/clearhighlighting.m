@@ -1,0 +1,16 @@
+SLStudio.Utils.RemoveHighlighting(get_param('spec_avg_CRD', 'handle'));
+SLStudio.Utils.RemoveHighlighting(get_param('gm_spec_avg_CRD', 'handle'));
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, '');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, '');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, '');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, '');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/512 pt FFT', 1, 1, '');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/512 pt FFT', 1, 1, '');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/512 pt FFT', 1, 1, '');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/512 pt FFT', 1, 1, '');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/Spectral Averager/Simple Dual Port RAM', 1, 1, '');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/Spectral Averager/Simple Dual Port RAM', 1, 1, '');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/Spectral Averager/Simple Dual Port RAM', 1, 1, '');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/Digital Spectrometer/Spectral Averager/Simple Dual Port RAM', 1, 1, '');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/1-D Lookup Table1/1-D Lookup Table1', 0, 1, '');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/1-D Lookup Table1', 0, 1, '');

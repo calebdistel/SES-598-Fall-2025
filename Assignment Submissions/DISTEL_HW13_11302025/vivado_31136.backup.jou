@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec  1 10:49:58 2025
+# Process ID: 31136
+# Current directory: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025
+# Command line: vivado.exe -mode tcl
+# Log file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/vivado.log
+# Journal file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025\vivado.jou
+# Running On        :LAPTOP-CEB4FDNH
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Xeon(R) W-10855M CPU @ 2.80GHz
+# CPU Frequency     :2808 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :34065 MB
+# Swap memory       :12348 MB
+# Total Virtual     :46413 MB
+# Available Virtual :4989 MB
+#-----------------------------------------------------------
+open_project hdlverifier_wizard_project/wizprj.xpr
+set_property -name {xelab.debug_level} -value {off} -objects [get_filesets sim_1]
+set_property -name {xelab.more_options} -value { --timescale 1ps/1ps --override_timeprecision } -objects [get_filesets sim_1]
+set_property -name {xelab.dll} -value {1} -objects [get_filesets sim_1]
+set_property -name {xelab.snapshot} -value {design} -objects [get_filesets sim_1]
+launch_simulation
+# The xsim.dir must be co-located with the model.
+# - save off existing xsim.dir
+if {[file exists xsim.dir] == 1} {
+    set mtime [file mtime xsim.dir]
+    set mtimestamp [clock format $mtime -format %Y%m%d_%H%M%S]
+    set xsim_savefile "xsim.dir.$mtimestamp"
+    file rename xsim.dir $xsim_savefile
+}
+# - copy up newly elaborated xsim.dir area from project to the current working directory.
+set proj_xsim_dir {hdlverifier_wizard_project/wizprj.sim/sim_1/behav/xsim/xsim.dir}
+set proj_mtime [file mtime "$proj_xsim_dir/design"]
+file copy -force $proj_xsim_dir .
+file mtime xsim.dir $proj_mtime

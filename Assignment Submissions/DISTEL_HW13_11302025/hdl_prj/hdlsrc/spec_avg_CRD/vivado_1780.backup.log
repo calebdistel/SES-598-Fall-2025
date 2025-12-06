@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec  1 11:26:32 2025
+# Process ID: 1780
+# Current directory: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD
+# Command line: vivado.exe -mode batch -source gm_spec_avg_CRD_vs.tcl
+# Log file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/vivado.log
+# Journal file: C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD\vivado.jou
+# Running On        :LAPTOP-CEB4FDNH
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Xeon(R) W-10855M CPU @ 2.80GHz
+# CPU Frequency     :2808 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :34065 MB
+# Swap memory       :12348 MB
+# Total Virtual     :46413 MB
+# Available Virtual :8609 MB
+#-----------------------------------------------------------
+source gm_spec_avg_CRD_vs.tcl
+# exec xvhdl --work work ddc_spec_avg_pkg.vhd ddc_spec_avg_tc.vhd Increment_Real_World.vhd Wrap_To_Zero.vhd Counter_Limited.vhd DitherGen.vhd LookUpTableGen.vhd WaveformGen.vhd NCO1.vhd Chirp.vhd LPF.vhd DitherGen_block.vhd LookUpTableGen_block.vhd WaveformGen_block.vhd NCO.vhd DDC.vhd SimpleDualPortRAM_generic.vhd Spec_Avg.vhd Quadrant_Mapper.vhd SDFCommutator1.vhd RADIX22FFT_SDF1_1.vhd RADIX22FFT_CTRL1_1.vhd SDFCommutator2.vhd RADIX22FFT_SDF2_2.vhd RADIX22FFT_CTRL1_2.vhd TWDLROM_3_1.vhd Complex4Multiply.vhd SDFCommutator3.vhd RADIX22FFT_SDF1_3.vhd RADIX22FFT_CTRL1_3.vhd SDFCommutator4.vhd RADIX22FFT_SDF2_4.vhd RADIX22FFT_CTRL1_4.vhd TWDLROM_5_1.vhd Complex4Multiply_block.vhd SDFCommutator5.vhd RADIX22FFT_SDF1_5.vhd RADIX22FFT_CTRL1_5.vhd SDFCommutator6.vhd RADIX22FFT_SDF2_6.vhd RADIX22FFT_CTRL1_6.vhd TWDLROM_7_1.vhd Complex4Multiply_block1.vhd SDFCommutator7.vhd RADIX22FFT_SDF1_7.vhd RADIX22FFT_CTRL1_7.vhd SDFCommutator8.vhd RADIX22FFT_SDF2_8.vhd RADIX22FFT_CTRL1_8.vhd TWDLROM_9_1.vhd Complex4Multiply_block2.vhd SDFCommutator9.vhd RADIX22FFT_SDF1_9.vhd RADIX22FFT_CTRL1_1_block.vhd RADIX2FFT_bitNatural.vhd FFT.vhd CordicKernelMag.vhd CordicKernelMag_block.vhd CordicKernelMag_block1.vhd CordicKernelMag_block2.vhd CordicKernelMag_block3.vhd CordicKernelMag_block4.vhd CordicKernelMag_block5.vhd CordicKernelMag_block6.vhd CordicKernelMag_block7.vhd CordicKernelMag_block8.vhd CordicKernelMag_block9.vhd CordicKernelMag_block10.vhd CordicKernelMag_block11.vhd CordicKernelMag_block12.vhd CordicKernelMag_block13.vhd CordicKernelMag_block14.vhd CordicKernelMag_block15.vhd CordicKernelMag_block16.vhd CordicKernelMag_block17.vhd CordicKernelMag_block18.vhd CordicKernelMag_block19.vhd CordicKernelMag_block20.vhd CordicKernelMag_block21.vhd CordicKernelMag_block22.vhd ddc_spec_avg.vhd 
+# exec xelab ddc_spec_avg --timeprecision_vhdl 1ps --override_timeprecision -dll --snapshot design -debug wave 
+# cd ../../../
+# if {[file exists xsim.dir] == 1} {
+#     set mtime [file mtime xsim.dir]
+#     set mtimestamp [clock format $mtime -format %Y%m%d_%H%M%S]
+#     set xsim_savefile "xsim.dir.$mtimestamp"
+#     file rename xsim.dir $xsim_savefile
+# }
+# set proj_xsim_dir {hdl_prj\hdlsrc\spec_avg_CRD/xsim.dir}
+# set proj_mtime [file mtime "$proj_xsim_dir/design"]
+# file copy -force $proj_xsim_dir .
+# file mtime xsim.dir $proj_mtime
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  1 11:26:48 2025...

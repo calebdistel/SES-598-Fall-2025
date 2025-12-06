@@ -1,0 +1,163 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Digital_Spectrometer_from_Chirp_DDC_pkg.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Digital_Spectrometer_from_Chirp_DDC_tc.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Digital_Spectrometer_from_Chirp_DDC_tc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Increment_Real_World.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Increment_Real_World'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Wrap_To_Zero.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Wrap_To_Zero'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Counter_Limited.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Counter_Limited'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/DitherGen.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'DitherGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/LookUpTableGen.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'LookUpTableGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/WaveformGen.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'WaveformGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/NCO1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'NCO1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Chirp.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Chirp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/LPF.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'LPF'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/DitherGen_block.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'DitherGen_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/LookUpTableGen_block.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'LookUpTableGen_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/WaveformGen_block.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'WaveformGen_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/LO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'LO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/DDC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'DDC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SimpleDualPortRAM_generic.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SimpleDualPortRAM_generic'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Spectral_Averager.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Spectral_Averager'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator2.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_2.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_2.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/TWDLROM_3_1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_3_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Complex4Multiply.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator3.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_3.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_3.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator4.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_4.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_4.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/TWDLROM_5_1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_5_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Complex4Multiply_block.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator5.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_5.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_5.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator6.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_6.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_6.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/TWDLROM_7_1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_7_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Complex4Multiply_block1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply_block1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator7.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_7.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_7.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator8.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF2_8.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF2_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_8.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/TWDLROM_9_1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'TWDLROM_9_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Complex4Multiply_block2.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Complex4Multiply_block2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/SDFCommutator9.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'SDFCommutator9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_SDF1_9.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_SDF1_9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX22FFT_CTRL1_1_block.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX22FFT_CTRL1_1_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/RADIX2FFT_bitNatural.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RADIX2FFT_bitNatural'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/alpha512_pt_FFT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'alpha512_pt_FFT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Quadrant_Mapper.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Quadrant_Mapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block1.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block2.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block3.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block3'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block4.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block5.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block6.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block7.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block8.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block9.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block9'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block10.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block10'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block11.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block11'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block12.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block12'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block13.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block13'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block14.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block14'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block15.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block15'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block16.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block16'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block17.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block17'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block18.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block18'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block19.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block19'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block20.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block20'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block21.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block21'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/CordicKernelMag_block22.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CordicKernelMag_block22'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Digital_Spectrometer.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Digital_Spectrometer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caleb/Documents/GitHub/SES-598-Fall-2025/DISTEL_HW13_11302025/hdl_prj/hdlsrc/spec_avg_CRD/Digital_Spectrometer_from_Chirp_DDC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'Digital_Spectrometer_from_Chirp_DDC'

@@ -1,0 +1,216 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Dec  1 13:03:45 2025
+| Host         : LAPTOP-CEB4FDNH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ddc_spec_avg_control_sets_placed.rpt
+| Design       : ddc_spec_avg
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   138 |
+|    Minimum number of control sets                        |   138 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   606 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   138 |
+| >= 0 to < 4        |    67 |
+| >= 4 to < 6        |    13 |
+| >= 6 to < 8        |     7 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    47 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             848 |          261 |
+| Yes          | No                    | Yes                    |           20898 |         4424 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+| Clock Signal |                             Enable Signal                            | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+----------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk         | u_FFT/u_CTRL2_2_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_DDC/u_Chirp/u_NCO1/u_Wave_inst/validcnt0                           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_DDC/u_NCO/u_Wave_inst/validcnt0                                    | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_CTRL2_6_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_CTRL1_1_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_wrAddr_reg4_out     | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_CTRL1_7_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_ddc_spec_avg_tc/Radix22TwdlMapping_cnt                             | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_CTRL2_8_1/SDFController_rdAddr_reg                           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_CTRL1_3_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFCummutator_wrEnb_reg             | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFCummutator_wrxEnb_reg_1          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_CTRL2_8_1/SDFController_wrCount                              | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFController_procEnb_reg         | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_CTRL1_5_1/SDFController_procEnb_reg                          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_wrEnb_reg           | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_rdEnb_xmem          | reset            |                1 |              1 |         1.00 |
+|  clk         | u_FFT/u_twdlROM_7_1/Radix22TwdlMapping_phase                         | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL1_1_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_XState              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL2_2_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_ddc_spec_avg_tc/phase_0_reg_0[0]                                   | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL1_3_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL1_5_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL2_6_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL1_7_1/SDFController_rdAddr_reg                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL1_7_1/SDFController_rdState                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL1_7_1/SDFController_wrCount                              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL2_8_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_CTRL2_4_1/SDFController_multjState                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_wrAddr_reg          | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_twdlROM_9/Radix22TwdlMapping_phase                           | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_XState              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_XState              | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_twdlROM_3_1/Radix22TwdlMapping_phase                         | reset            |                1 |              2 |         2.00 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_wrAddr_reg          | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_CTRL2_6_1/SDFController_wrCount                              | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_xRdAddr             | reset            |                2 |              3 |         1.50 |
+|  clk         | u_FFT/u_CTRL2_6_1/SDFController_rdState                              | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_CTRL2_6_1/SDFController_rdAddr_reg                           | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_CTRL2_8_1/SDFController_rdState                              | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_CTRL2_4_1/SDFController_rdState                              | reset            |                1 |              3 |         3.00 |
+|  clk         | u_ddc_spec_avg_tc/SDFOutmux_btfPipe_vld_reg_0[0]                     | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_CTRL2_2_1/SDFController_rdState                              | reset            |                2 |              3 |         1.50 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_xWrAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_xRdAddr             | reset            |                1 |              3 |         3.00 |
+|  clk         | u_FFT/u_CTRL1_5_1/SDFController_rdAddr_reg                           | reset            |                1 |              4 |         4.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_xX_vld_reg          | reset            |                2 |              4 |         2.00 |
+|  clk         | u_FFT/u_CTRL1_5_1/SDFController_wrCount                              | reset            |                1 |              4 |         4.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_xX_vld_reg          | reset            |                2 |              4 |         2.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_rdCnt               | reset            |                1 |              4 |         4.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_xX_vld_reg          | reset            |                2 |              4 |         2.00 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_xX_vld_reg          | reset            |                1 |              4 |         4.00 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_xX_vld_reg          | reset            |                1 |              4 |         4.00 |
+|  clk         | u_ddc_spec_avg_tc/SDFOutmux_btfPipe_vld_reg[0]                       | reset            |                2 |              5 |         2.50 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/E[0]                              | reset            |                1 |              5 |         5.00 |
+|  clk         | u_FFT/u_CTRL2_4_1/SDFController_rdAddr_reg                           | reset            |                1 |              5 |         5.00 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_rdCnt               | reset            |                1 |              5 |         5.00 |
+|  clk         | u_Spec_Avg/Spectral_Averaging_out1                                   | reset            |                2 |              5 |         2.50 |
+|  clk         | u_FFT/u_CTRL1_3_1/SDFController_rdAddr_reg                           | reset            |                2 |              6 |         3.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_rdCnt               | reset            |                2 |              6 |         3.00 |
+|  clk         | u_FFT/u_CTRL1_3_1/SDFController_wrCount                              | reset            |                1 |              6 |         6.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_rdCnt               | reset            |                3 |              7 |         2.33 |
+|  clk         | u_FFT/u_CTRL2_2_1/SDFController_wrCount                              | reset            |                2 |              7 |         3.50 |
+|  clk         | u_FFT/u_CTRL2_2_1/SDFController_rdAddr_reg                           | reset            |                2 |              7 |         3.50 |
+|  clk         | u_ddc_spec_avg_tc/E[0]                                               | reset            |                2 |              7 |         3.50 |
+|  clk         | u_FFT/u_CTRL1_1_1/SDFController_rdAddr_reg                           | reset            |                2 |              8 |         4.00 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_rdCnt               | reset            |                3 |              8 |         2.67 |
+|  clk         | u_FFT/u_CTRL1_1_1/SDFController_wrCount                              | reset            |                2 |              8 |         4.00 |
+|  clk         | u_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/E[0]                                | reset            |                4 |             11 |         2.75 |
+|  clk         | u_ddc_spec_avg_tc/ce_out                                             | reset            |               10 |             17 |         1.70 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_wrxEnb_reg_0        | reset            |                4 |             18 |         4.50 |
+|  clk         | u_DDC/u_Chirp/u_NCO1/pn_reg[18]_i_1_n_0                              | reset            |                7 |             19 |         2.71 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFOutmux_btf2Pipe_re             | reset            |                5 |             19 |         3.80 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/SDFCummutator_wrAddr_reg          | reset            |                9 |             25 |         2.78 |
+|  clk         | u_FFT/u_SDF1_1_1/u_SDFCOMMUTATOR_1/u_dataXMEM_re_0_1/p_0_in__0       |                  |                4 |             28 |         7.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFOutmux_btf2Pipe_re             | reset            |                6 |             36 |         6.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_wrxEnb_reg_0        | reset            |                7 |             37 |         5.29 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFOutmux_btf2Pipe_re             | reset            |                6 |             38 |         6.33 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_wrxEnb_reg_0        | reset            |                5 |             39 |         7.80 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFOutmux_btf2Pipe_re             | reset            |                6 |             40 |         6.67 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_wrxEnb_reg_0        | reset            |                7 |             41 |         5.86 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFOutmux_btf2Pipe_re             | reset            |                7 |             42 |         6.00 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/SDFCummutator_wrAddr_reg          | reset            |               15 |             43 |         2.87 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_wrxEnb_reg_0        | reset            |               10 |             43 |         4.30 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/SDFCummutator_wrAddr_reg          | reset            |               12 |             44 |         3.67 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFOutmux_btf2Pipe_re             | reset            |               10 |             44 |         4.40 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/SDFCummutator_wrAddr_reg          | reset            |               11 |             45 |         4.09 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_wrAddr_reg_reg_0[0] | reset            |               16 |             46 |         2.88 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFOutmux_btf2Pipe_re             | reset            |               13 |             46 |         3.54 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/E[0]                              | reset            |               17 |             46 |         2.71 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/SDFCummutator_wrAddr_reg          | reset            |               13 |             46 |         3.54 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/SDFCummutator_xX_vld_reg          | reset            |                9 |             46 |         5.11 |
+|  clk         | u_FFT/u_SDF2_2_1/u_SDFCOMMUTATOR_2/u_dataXMEM_im_0_2/p_0_in          |                  |                6 |             48 |         8.00 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/SDFCummutator_xX_vld_reg          | reset            |               11 |             48 |         4.36 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFOutmux_btf2Pipe_re             | reset            |               10 |             48 |         4.80 |
+|  clk         | u_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFOutmux_btf2Pipe_re               | reset            |               11 |             50 |         4.55 |
+|  clk         | u_ddc_spec_avg_tc/SDFCummutator_wrEnb_reg_reg[0]                     | reset            |               19 |             50 |         2.63 |
+|  clk         | u_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/u_dataXMEM_im_0_9/p_0_in            |                  |               13 |             50 |         3.85 |
+|  clk         | u_ddc_spec_avg_tc/rdStateMachineBitNatural_doutVldReg1_reg[0]        | reset            |               10 |             50 |         5.00 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/SDFCummutator_xX_vld_reg          | reset            |               12 |             50 |         4.17 |
+|  clk         | u_FFT/u_RADIX2/u_SDFCOMMUTATOR_9/SDFCummutator_wrXData_re_reg_0      | reset            |               12 |             50 |         4.17 |
+|  clk         | u_FFT/u_SDF2_4_1/u_SDFCOMMUTATOR_4/u_dataXMEM_re_0_4/p_0_in__1       |                  |                7 |             56 |         8.00 |
+|  clk         | u_FFT/u_SDF1_3_1/u_SDFCOMMUTATOR_3/u_dataXMEM_re_0_3/p_0_in__0       |                  |                7 |             56 |         8.00 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/u_dataXMEM_im_0_7/p_0_in__2       |                  |                8 |             64 |         8.00 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/u_dataXMEM_im_0_6/p_0_in__3       |                  |                8 |             64 |         8.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/p_0_in                            |                  |                8 |             64 |         8.00 |
+|  clk         | u_FFT/u_SDF2_8_1/u_SDFCOMMUTATOR_8/u_dataXMEM_im_0_8/p_0_in__1       |                  |                8 |             64 |         8.00 |
+|  clk         | u_FFT/u_SDF1_7_1/u_SDFCOMMUTATOR_7/p_0_in__1                         |                  |                8 |             64 |         8.00 |
+|  clk         | u_FFT/u_SDF2_6_1/u_SDFCOMMUTATOR_6/p_0_in__2                         |                  |                8 |             64 |         8.00 |
+|  clk         | u_FFT/u_SDF1_5_1/u_SDFCOMMUTATOR_5/u_dataXMEM_im_0_5/p_0_in          |                  |                8 |             64 |         8.00 |
+|  clk         | clk_enable                                                           |                  |               52 |             81 |         1.56 |
+|  clk         | clk_enable                                                           | reset            |              137 |            443 |         3.23 |
+|  clk         | u_Spec_Avg/enb_1_2_0_gated_3                                         |                  |              128 |            544 |         4.25 |
+|  clk         | u_Spec_Avg/enb_1_2_0_gated_3                                         | reset            |              115 |            553 |         4.81 |
+|  clk         | u_ddc_spec_avg_tc/enb_1_2_0_BUFG                                     |                  |             1619 |           6751 |         4.17 |
+|  clk         | u_ddc_spec_avg_tc/enb_1_2_0_BUFG                                     | reset            |             3770 |          18465 |         4.90 |
++--------------+----------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

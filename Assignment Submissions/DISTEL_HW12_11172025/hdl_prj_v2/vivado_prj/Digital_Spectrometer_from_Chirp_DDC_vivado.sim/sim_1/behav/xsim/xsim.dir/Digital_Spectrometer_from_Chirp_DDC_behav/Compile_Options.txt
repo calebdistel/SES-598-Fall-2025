@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Digital_Spectrometer_from_Chirp_DDC_behav" "xil_defaultlib.Digital_Spectrometer_from_Chirp_DDC" -log "elaborate.log" 

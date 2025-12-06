@@ -1,0 +1,10 @@
+open_system('spec_avg_CRD');
+open_system('gm_spec_avg_CRD');
+cs.HiliteType = 'user1';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'cyan';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/1-D Lookup Table1/1-D Lookup Table1', 'user1');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/1-D Lookup Table1/1-D Lookup Table1', 0, 1, 'Lookup Table mapped to RAM');
+hilite_system('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/1-D Lookup Table1', 'user1');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/1-D Lookup Table1', 0, 1, 'Lookup Table mapped to RAM');

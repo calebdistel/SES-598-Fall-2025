@@ -1,0 +1,18 @@
+open_system('spec_avg_CRD');
+open_system('gm_spec_avg_CRD');
+cs.HiliteType = 'user1';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'cyan';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 'user1');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, 'Blocks delay absorption: 1 cycles');
+hilite_system('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 'user1');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, 'Blocks delay absorption: 1 cycles');
+cs.HiliteType = 'user1';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'cyan';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 'user1');
+annotate_port('gm_spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, 'Blocks delay absorption: 1 cycles');
+hilite_system('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 'user1');
+annotate_port('spec_avg_CRD/Digital Spectrometer from Chirp DDC/DDC/Chirp/NCO1', 0, 1, 'Blocks delay absorption: 1 cycles');

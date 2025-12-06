@@ -1,0 +1,20 @@
+         VHDL Instance: {/Subsystem}
+
+        In: {clk}                          VHDL   
+
+        In: {reset}                        VHDL   
+
+        In: {clk_enable}                   VHDL   
+
+        In: {valid}                        VHDL   
+
+       Out: {ce_out}                       VHDL   
+
+       Out: {avg_out[31:0]}                VHDL   
+
+       Out: {valid_out}                    VHDL   
+
+       Out: {sample_in[25:0]}              VHDL   
+
+       Out: {valid_in}                     VHDL   
+

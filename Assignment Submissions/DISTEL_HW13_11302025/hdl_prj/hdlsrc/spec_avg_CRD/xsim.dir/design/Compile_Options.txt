@@ -1,0 +1,1 @@
+"Digital_Spectrometer_from_Chirp_DDC" --timeprecision_vhdl "1ps" --override_timeprecision -dll --snapshot "design" -debug "wave" 
